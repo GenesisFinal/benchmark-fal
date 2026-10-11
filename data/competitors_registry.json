@@ -1,0 +1,388 @@
+[
+  {
+    "id": "acavalores",
+    "name": "ACA Valores",
+    "type": "ALYC",
+    "isTarget": true,
+    "primary_url": "https://www.acavaloresfal.com.ar/",
+    "secondary_url": "https://www.acavalores.com.ar/",
+    "keywords": [
+      "fal",
+      "fondo de asistencia laboral",
+      "0%",
+      "bonificada",
+      "la segunda",
+      "vida"
+    ]
+  },
+  {
+    "id": "allaria",
+    "name": "Allaria",
+    "type": "ALYC",
+    "isTarget": false,
+    "primary_url": "https://www.allaria.com.ar/",
+    "secondary_url": "https://www.allariafondos.com.ar/",
+    "keywords": [
+      "fal",
+      "asistencia laboral",
+      "comision",
+      "honorarios"
+    ]
+  },
+  {
+    "id": "cocos",
+    "name": "Cocos",
+    "type": "FINTECH",
+    "isTarget": false,
+    "primary_url": "https://www.cocos.capital/",
+    "secondary_url": "https://cocos.capital/empresas",
+    "keywords": [
+      "fal",
+      "comision",
+      "empresas",
+      "fondo laboral"
+    ]
+  },
+  {
+    "id": "balanz",
+    "name": "Balanz",
+    "type": "ALYC",
+    "isTarget": false,
+    "primary_url": "https://www.balanz.com/",
+    "secondary_url": "https://balanz.com/corporativo/",
+    "keywords": [
+      "fal",
+      "asistencia laboral",
+      "comision",
+      "fci"
+    ]
+  },
+  {
+    "id": "bancodelsol",
+    "name": "Banco del Sol",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.bancodelsol.com/",
+    "secondary_url": "https://bancodelsol.com/empresas",
+    "keywords": [
+      "fal",
+      "cuenta sueldo",
+      "sancor",
+      "empresas"
+    ]
+  },
+  {
+    "id": "bbva",
+    "name": "BBVA",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.bbva.com.ar/empresas/servicios/pago-de-haberes.html",
+    "secondary_url": "https://www.bbva.com.ar/empresas.html",
+    "keywords": [
+      "fal",
+      "cuenta sueldo",
+      "haberes",
+      "bonificacion",
+      "0%"
+    ]
+  },
+  {
+    "id": "galicia",
+    "name": "Galicia",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.galicia.ar/empresas",
+    "secondary_url": "https://fondosfima.com.ar/",
+    "keywords": [
+      "fal",
+      "fima",
+      "haberes",
+      "comision"
+    ]
+  },
+  {
+    "id": "nacion",
+    "name": "Banco Nación",
+    "type": "BANCO_PUBLICO",
+    "isTarget": false,
+    "primary_url": "https://www.bna.com.ar/Empresas",
+    "secondary_url": "https://www.pellegrinifondos.com.ar/",
+    "keywords": [
+      "fal",
+      "pellegrini",
+      "haberes",
+      "0%"
+    ]
+  },
+  {
+    "id": "provincia",
+    "name": "Banco Provincia",
+    "type": "BANCO_PUBLICO",
+    "isTarget": false,
+    "primary_url": "https://www.bancoprovincia.com.ar/",
+    "secondary_url": "https://www.provinciafondos.com.ar/",
+    "keywords": [
+      "fal",
+      "raices",
+      "cuenta sueldo",
+      "comision"
+    ]
+  },
+  {
+    "id": "credicoop",
+    "name": "Banco Credicoop",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.bancocredicoop.coop/empresas",
+    "secondary_url": "https://www.fideban.com.ar/",
+    "keywords": [
+      "fal",
+      "convenio",
+      "cam",
+      "haberes",
+      "cooperativo"
+    ]
+  },
+  {
+    "id": "macro",
+    "name": "Banco Macro",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.macro.com.ar/empresas",
+    "secondary_url": "https://www.macro.com.ar/pionero",
+    "keywords": [
+      "fal",
+      "haberes",
+      "bma",
+      "0%"
+    ]
+  },
+  {
+    "id": "patagonia",
+    "name": "Banco Patagonia",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.bancopatagonia.com.ar/empresas",
+    "secondary_url": "https://www.lombardfondos.com.ar/",
+    "keywords": [
+      "fal",
+      "lombard",
+      "haberes",
+      "comision"
+    ]
+  },
+  {
+    "id": "icbc",
+    "name": "ICBC",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.icbc.com.ar/empresas",
+    "secondary_url": "https://www.alphafondos.com.ar/",
+    "keywords": [
+      "fal",
+      "alpha",
+      "cuenta sueldo",
+      "haberes"
+    ]
+  },
+  {
+    "id": "hipotecario",
+    "name": "Banco Hipotecario",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.hipotecario.com.ar/empresas/",
+    "secondary_url": "https://www.bacs.com.ar/",
+    "keywords": [
+      "fal",
+      "bacs",
+      "bh",
+      "haberes"
+    ]
+  },
+  {
+    "id": "toronto",
+    "name": "Toronto Trust",
+    "type": "BOUTIQUE",
+    "isTarget": false,
+    "primary_url": "https://www.torontotrust.com.ar/",
+    "secondary_url": "https://www.torontotrust.com.ar/fondos",
+    "keywords": [
+      "fal",
+      "asistencia laboral",
+      "comision"
+    ]
+  },
+  {
+    "id": "compass",
+    "name": "Compass Group",
+    "type": "BOUTIQUE",
+    "isTarget": false,
+    "primary_url": "https://www.cgcompass.com/",
+    "secondary_url": "https://www.cgcompass.com/argentina",
+    "keywords": [
+      "fal",
+      "institucional",
+      "fondos"
+    ]
+  },
+  {
+    "id": "consultatio",
+    "name": "Consultatio / One 618",
+    "type": "ALYC",
+    "isTarget": false,
+    "primary_url": "https://www.consultatioasset.com.ar/",
+    "secondary_url": "https://one618.com.ar/",
+    "keywords": [
+      "fal",
+      "asistencia laboral",
+      "one 618",
+      "comision"
+    ]
+  },
+  {
+    "id": "coinag",
+    "name": "Banco Coinag",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.bancocoinag.com/",
+    "secondary_url": "https://www.bancocoinag.com/empresas",
+    "keywords": [
+      "fal",
+      "cooperativo",
+      "haberes"
+    ]
+  },
+  {
+    "id": "santander",
+    "name": "Banco Santander",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.santander.com.ar/empresas",
+    "secondary_url": "https://www.santanderassetmanagement.com.ar/",
+    "keywords": [
+      "fal",
+      "cuenta sueldo",
+      "supergestion",
+      "haberes"
+    ]
+  },
+  {
+    "id": "supervielle",
+    "name": "Banco Supervielle",
+    "type": "BANCO_PRIVADO",
+    "isTarget": false,
+    "primary_url": "https://www.supervielle.com.ar/empresas",
+    "secondary_url": "https://www.premierfondos.com.ar/",
+    "keywords": [
+      "fal",
+      "premier",
+      "haberes",
+      "comision"
+    ]
+  },
+  {
+    "id": "iol",
+    "name": "IOL InvertirOnline",
+    "type": "FINTECH",
+    "isTarget": false,
+    "primary_url": "https://invertironline.com/",
+    "secondary_url": "https://invertironline.com/empresas",
+    "keywords": [
+      "fal",
+      "asistencia laboral",
+      "empresas"
+    ]
+  },
+  {
+    "id": "bullmarket",
+    "name": "Bull Market Brokers",
+    "type": "FINTECH",
+    "isTarget": false,
+    "primary_url": "https://www.bullmarketbrokers.com/",
+    "secondary_url": "https://bullmarketbrokers.com/Corporativo",
+    "keywords": [
+      "fal",
+      "corporativo",
+      "comision"
+    ]
+  },
+  {
+    "id": "ppi",
+    "name": "PPI",
+    "type": "ALYC",
+    "isTarget": false,
+    "primary_url": "https://www.portfoliopersonal.com/",
+    "secondary_url": "https://portfoliopersonal.com/Empresas",
+    "keywords": [
+      "fal",
+      "empresas",
+      "comision",
+      "fondos"
+    ]
+  },
+  {
+    "id": "sbs",
+    "name": "SBS Fondos",
+    "type": "ALYC",
+    "isTarget": false,
+    "primary_url": "https://gruposbs.com/",
+    "secondary_url": "https://sbsfondos.com/",
+    "keywords": [
+      "fal",
+      "sbs",
+      "asistencia laboral"
+    ]
+  },
+  {
+    "id": "adcap",
+    "name": "Adcap Asset Management",
+    "type": "BOUTIQUE",
+    "isTarget": false,
+    "primary_url": "https://www.adcap.com.ar/",
+    "secondary_url": "https://adcapassetmanagement.com.ar/",
+    "keywords": [
+      "fal",
+      "corporativo",
+      "comision"
+    ]
+  },
+  {
+    "id": "mariva",
+    "name": "Mariva Asset Management",
+    "type": "ALYC",
+    "isTarget": false,
+    "primary_url": "https://www.bancomariva.com.ar/",
+    "secondary_url": "https://marivaassetmanagement.com.ar/",
+    "keywords": [
+      "fal",
+      "mariva",
+      "asistencia laboral"
+    ]
+  },
+  {
+    "id": "ciudad",
+    "name": "Banco Ciudad",
+    "type": "BANCO_PUBLICO",
+    "isTarget": false,
+    "primary_url": "https://www.bancociudad.com.ar/empresas/",
+    "secondary_url": "https://ciudadfondos.com.ar/",
+    "keywords": [
+      "fal",
+      "ciudad",
+      "haberes"
+    ]
+  },
+  {
+    "id": "bancor",
+    "name": "Bancor",
+    "type": "BANCO_PUBLICO",
+    "isTarget": false,
+    "primary_url": "https://www.bancor.com.ar/",
+    "secondary_url": "https://www.champaquifondos.com.ar/",
+    "keywords": [
+      "fal",
+      "champaqui",
+      "haberes"
+    ]
+  }
+]
