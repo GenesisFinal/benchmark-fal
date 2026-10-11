@@ -1,0 +1,2457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Benchmark Integral de Mercado: Fondo de Asistencia Laboral (FAL) | ACA Valores</title>
+  <link rel="icon" type="image/png" href="https://www.acavalores.com.ar/ACA-Valores.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --primary: #173b94;
+      --primary-dark: #0e2e73;
+      --primary-light: #234da9;
+      --verde: #95CA3C;
+      --verde-dark: #7ba82c;
+      --celeste: #00B3E4;
+      --naranja: #FF9100;
+      --fondo: #f4f7fc;
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+      .print-break { page-break-after: always; }
+    }
+    body {
+      font-family: 'Heebo', sans-serif;
+      background-color: #f4f7fc;
+      color: #102d76;
+    }
+    h1, h2, h3, h4, h5, h6, .font-heading {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .soft-shadow {
+      box-shadow: 0 4px 20px -2px rgba(14, 46, 115, 0.07), 0 2px 6px -1px rgba(14, 46, 115, 0.04);
+    }
+    .aca-gradient-hero {
+      background: linear-gradient(115deg, #0e2e73 0%, #173b94 60%, #123577 100%);
+    }
+    .aca-card-highlight {
+      background: linear-gradient(110deg, #edf4ff 0%, #ffffff 100%);
+      border: 2px solid #ccdbf3;
+    }
+    .action-btn-azul {
+      border: 1px solid #173b94;
+      border-radius: 9999px;
+      padding: 0.5rem 1.25rem;
+      font-weight: 700;
+      color: white;
+      background-color: #173b94;
+      transition: all 0.3s ease;
+    }
+    .action-btn-azul:hover {
+      background-color: #95CA3C;
+      border-color: #95CA3C;
+      color: #0e2e73;
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #94a3b8;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #173b94;
+    }
+  </style>
+</head>
+<body class="bg-[#f4f7fc] text-[#102d76] antialiased min-h-screen flex flex-col">
+
+  <!-- ========================================================== -->
+  <!-- BARRA DE NAVEGACIÓN CORPORATIVA ACA VALORES               -->
+  <!-- ========================================================== -->
+  <header class="sticky top-0 z-50 shadow-md">
+    <!-- FRANJA INSTITUCIONAL SUPERIOR -->
+    <div class="bg-[#0e2e73] text-white border-b border-[#123577] py-1.5 px-4 sm:px-6 lg:px-8 text-[11px] no-print">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div class="flex items-center gap-2 text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-[#95CA3C] animate-pulse"></span>
+          <span><strong>ACA VALORES S.A.</strong> • ALyC Propio N° 1304 CNV | ACyDI N° 173 CNV</span>
+          <span class="hidden md:inline text-slate-400">• Grupo Cooperativo ACA • La Segunda • BIND</span>
+        </div>
+        <div class="flex items-center gap-4 text-slate-300">
+          <a href="https://www.acavaloresfal.com.ar" target="_blank" rel="noopener noreferrer" class="text-[#95CA3C] font-bold hover:underline flex items-center gap-1">
+            <span>🌾</span> Portal Fondos FAL ↗
+          </a>
+          <a href="https://www.acavalores.com.ar" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">
+            acavalores.com.ar ↗
+          </a>
+          <a href="https://onboarding.acavalores.com.ar/account/create" target="_blank" rel="noopener noreferrer" class="bg-[#173b94] hover:bg-[#95CA3C] hover:text-[#0e2e73] text-white px-2.5 py-0.5 rounded-full font-bold transition">
+            Apertura Online
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BARRA PRINCIPAL DE NAVEGACIÓN -->
+    <div class="bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+        
+        <!-- LOGO OFICIAL ACA VALORES & SUBTÍTULO -->
+        <div class="flex items-center justify-between">
+          <a href="https://www.acavalores.com.ar/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+            <img src="https://www.acavaloresfal.com.ar/images/aca-logo-color.png" alt="ACA Valores - Mercado de Capitales" class="h-10 sm:h-12 w-auto object-contain">
+            <div class="border-l-2 border-slate-200 pl-3">
+              <div class="flex items-center gap-2">
+                <span class="text-xs sm:text-sm font-extrabold text-[#0e2e73] font-heading tracking-tight leading-none">
+                  FONDO DE ASISTENCIA LABORAL
+                </span>
+                <span class="bg-[#95CA3C]/20 text-[#0e2e73] text-[9px] font-extrabold px-2 py-0.5 rounded-full border border-[#95CA3C]/40">
+                  LEY 27.802
+                </span>
+              </div>
+              <p class="text-[10px] text-slate-500 font-medium mt-0.5">
+                Benchmark Integral de Mercado • Vigencia 1 de Noviembre de 2026
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- BOTONES DE PESTAÑAS (TABS) CON ESTILO BRANDED ACA -->
+        <nav class="flex items-center gap-1 overflow-x-auto no-print pb-1 md:pb-0">
+          <button onclick="navigateTab('tab-benchmark')" id="nav-benchmark" class="tab-btn px-3 py-1.5 rounded-full text-xs font-bold bg-[#173b94] text-white shadow-xs transition">
+            📊 Matriz Comparativa
+          </button>
+          <button onclick="navigateTab('tab-comparator')" id="nav-comparator" class="tab-btn px-3 py-1.5 rounded-full text-xs font-semibold text-[#173b94] hover:bg-[#edf4fd] transition">
+            ⚡ Comparador vs. ACA
+          </button>
+          <button onclick="navigateTab('tab-simulator')" id="nav-simulator" class="tab-btn px-3 py-1.5 rounded-full text-xs font-semibold text-[#173b94] hover:bg-[#edf4fd] transition">
+            🧮 Simulador Nómina
+          </button>
+          <button onclick="navigateTab('tab-checklist')" id="nav-checklist" class="tab-btn px-3 py-1.5 rounded-full text-xs font-semibold text-[#173b94] hover:bg-[#edf4fd] transition">
+            🗓️ Cronograma & Checklist
+          </button>
+          <button onclick="navigateTab('tab-directory')" id="nav-directory" class="tab-btn px-3 py-1.5 rounded-full text-xs font-semibold text-[#173b94] hover:bg-[#edf4fd] transition">
+            📑 28 Entidades
+          </button>
+          <button onclick="navigateTab('tab-normative')" id="nav-normative" class="tab-btn px-3 py-1.5 rounded-full text-xs font-semibold text-[#173b94] hover:bg-[#edf4fd] transition">
+            📜 Marco Legal
+          </button>
+          <button onclick="window.print()" class="px-2.5 py-1.5 rounded-full text-xs font-medium text-slate-500 hover:text-[#0e2e73] hover:bg-slate-100 transition ml-1 border border-slate-300" title="Imprimir o Exportar PDF">
+            🖨️
+          </button>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+    <!-- ========================================================== -->
+  <!-- BANNER EJECUTIVO DE KPIS (BRANDED ACA VALORES)            -->
+  <!-- ========================================================== -->
+  <section class="bg-white border-b border-slate-200 py-3.5 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
+        
+        <div class="p-3 bg-[#f8fafc] rounded-xl border border-slate-200">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Alícuota MiPyMEs</div>
+          <div class="text-lg font-extrabold text-[#173b94] font-heading mt-0.5">2,5%</div>
+          <div class="text-[11px] text-slate-500">s/ masa salarial bruta</div>
+        </div>
+
+        <div class="p-3 bg-[#f8fafc] rounded-xl border border-slate-200">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Alícuota Grandes Emp.</div>
+          <div class="text-lg font-extrabold text-[#0e2e73] font-heading mt-0.5">1,0%</div>
+          <div class="text-[11px] text-slate-500">s/ masa salarial bruta</div>
+        </div>
+
+        <div class="p-3 bg-[#f8fafc] rounded-xl border border-slate-200">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Tope Arancelario CNV</div>
+          <div class="text-lg font-extrabold text-[#FF9100] font-heading mt-0.5">1,00% Anual</div>
+          <div class="text-[11px] text-slate-500">Límite comisiones FCI</div>
+        </div>
+
+        <!-- ACA VALORES FLAGSHIP CARD -->
+        <div class="p-3 bg-gradient-to-br from-[#edf4ff] to-white rounded-xl border-2 border-[#173b94] shadow-xs relative overflow-hidden">
+          <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#0e2e73] flex items-center justify-between">
+            <span>ACA Valores</span>
+            <span class="text-[9px] bg-[#95CA3C] text-[#0e2e73] px-2 py-0.2 rounded-full font-black">RECOMENDADO</span>
+          </div>
+          <div class="text-lg font-black text-[#173b94] font-heading mt-0.5">0% x 12 Meses</div>
+          <div class="text-[11px] font-bold text-[#0e2e73]">1er Año 100% Bonificado</div>
+        </div>
+
+        <!-- LA SEGUNDA SEGUROS CARD -->
+        <div class="p-3 bg-[#edf4ff] rounded-xl border border-[#ccdbf3] flex flex-col justify-between">
+          <div class="text-[10px] font-bold uppercase tracking-wider text-[#173b94] flex items-center justify-between">
+            <span>Sinergia La Segunda</span>
+            <span class="text-[9px] bg-[#173b94] text-white px-1.5 py-0.2 rounded-full font-bold">100% GRATIS</span>
+          </div>
+          <div class="text-base font-extrabold text-[#0e2e73] font-heading mt-0.5">Póliza Vida LCT</div>
+          <div class="text-[11px] font-medium text-[#173b94]">6 Meses Bonificados</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== -->
+  <!-- CONTENEDOR PRINCIPAL DE CONTENIDOS                        -->
+  <!-- ========================================================== -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex-1 w-full">
+
+    <!-- ======================================================== -->
+    <!-- TAB 1: MATRIZ COMPARATIVA GLOBAL (BENCHMARK)            -->
+    <!-- ======================================================== -->
+    <div id="tab-benchmark" class="tab-pane space-y-6">
+      
+      <div class="bg-white rounded-2xl border border-slate-200 p-5 soft-shadow space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+              <span>📋</span> Cuadro Comparativo Maestro del Mercado (28 Entidades Relevadas)
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">
+              Relevamiento exhaustivo de bancos comerciales, públicos, ALyCs tradicionales, gestoras boutique y fintechs.
+            </p>
+          </div>
+
+          <!-- CONTROLES: BÚSQUEDA Y FILTRO -->
+          <div class="flex flex-wrap items-center gap-2.5">
+            <div class="relative">
+              <input type="text" id="tableSearch" placeholder="Buscar banco o gestor..." onkeyup="filterTable()" class="pl-8 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-300 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-[#173b94] w-48 sm:w-64">
+              <span class="absolute left-2.5 top-2 text-slate-400 text-xs">🔍</span>
+            </div>
+
+            <select id="typeFilter" onchange="filterTable()" class="py-1.5 px-3 text-xs bg-slate-50 border border-slate-300 rounded-lg text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#173b94] font-medium">
+              <option value="ALL">Todas las Categorías (28)</option>
+              <option value="ALYC">ALyCs & Cooperativas</option>
+              <option value="BANCO_PRIVADO">Banca Privada</option>
+              <option value="BANCO_PUBLICO">Banca Pública</option>
+              <option value="FINTECH">Fintechs</option>
+              <option value="BOUTIQUE">Gestoras Boutique</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- TABLA COMPARATIVA -->
+        <div class="overflow-x-auto border border-slate-200 rounded-xl">
+          <table class="w-full text-xs text-left border-collapse" id="masterTable">
+            <thead>
+              <tr class="bg-[#0e2e73] text-white font-semibold border-b border-[#123577]">
+                <th class="py-2.5 px-2.5 w-[112px] min-w-[112px]">Entidad / Gestor</th>
+                <th class="py-2.5 px-2 w-[64px] min-w-[64px]">Comisión Anual</th>
+                <th class="py-2.5 px-2 w-[77px] min-w-[77px]">Vehículo FCI</th>
+                <th class="py-2.5 px-2 w-[67px] min-w-[67px]">Alta ID FAL</th>
+                <th class="py-2.5 px-3 min-w-[380px] text-[#95CA3C] font-extrabold bg-[#173b94] border-x border-[#123577]">
+                  Oferta Especial Publicada & Cuenta Sueldo
+                </th>
+                <th class="py-2.5 px-2 w-[72px] min-w-[72px]">Requisitos</th>
+                <th class="py-2.5 px-2 w-[72px] min-w-[72px]">Seguros LCT</th>
+                <th class="py-2.5 px-2 w-[64px] min-w-[64px]">Capilaridad</th>
+                <th class="py-2.5 px-2 w-[55px] text-center">Acción</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200" id="tableBody">
+              <!-- Las filas se renderizan dinámicamente mediante JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="text-[11px] text-slate-500 flex flex-col sm:flex-row sm:items-center justify-between gap-1 pt-2">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 text-[10px] font-bold border border-emerald-200">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Bot Scraper Activo: Monitoreo Diario 2x/día</span>
+            </span>
+            <span class="text-slate-400">•</span>
+            <span class="text-slate-600 text-[10px] font-medium">Última auditoría: <strong>10/10/2026 21:45 ART</strong> (22/28 online (6 reintento diferido))</span>
+          </div>
+          <span id="rowCount" class="font-extrabold text-[#0e2e73]">Mostrando 28 entidades</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 2: COMPARADOR INTERACTIVO HEAD-TO-HEAD              -->
+    <!-- ======================================================== -->
+    <div id="tab-comparator" class="tab-pane hidden space-y-6">
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 soft-shadow space-y-6">
+        
+        <!-- SELECTOR INTERACTIVO SUPERIOR -->
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-5 border-b border-slate-200">
+          <div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#edf4ff] text-[#0e2e73] text-[11px] font-bold uppercase tracking-wider mb-1">
+              ⚡ Análisis Competitivo Uno a Uno
+            </div>
+            <h2 class="text-2xl font-bold text-slate-900">
+              ¿Por qué ACA Valores es la Mejor Oferta del Mercado?
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500 mt-1">
+              Seleccione cualquier competidor para comparar punto por punto aranceles, ataduras bancarias, respaldo asegurador y capilaridad.
+            </p>
+          </div>
+
+          <div class="flex items-center gap-3 bg-slate-50 p-2.5 rounded-xl border border-slate-200">
+            <label for="competitorSelect" class="text-xs font-bold text-slate-700 whitespace-nowrap">
+              Seleccionar Competidor:
+            </label>
+            <select id="competitorSelect" onchange="renderComparison()" class="bg-white text-slate-900 border border-slate-300 rounded-lg px-3 py-2 text-xs font-semibold focus:outline-none focus:ring-2 focus:ring-[#173b94] shadow-sm min-w-[240px]">
+              <!-- Opciones generadas por JS -->
+            </select>
+          </div>
+        </div>
+
+        <!-- TARJETAS COMPARATIVAS ENFRENTADAS -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+          <!-- TARJETA COMPETIDOR SELECCIONADO -->
+          <div class="border border-slate-200 rounded-2xl p-5 bg-slate-50 space-y-4 relative">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div id="compAvatar" class="w-12 h-12 rounded-xl bg-slate-200 text-slate-700 font-extrabold flex items-center justify-center text-sm shadow-inner">
+                  --
+                </div>
+                <div>
+                  <h3 id="compTitle" class="text-base font-bold text-slate-900">Nombre Competidor</h3>
+                  <div class="flex items-center gap-2 mt-0.5">
+                    <span id="compBadgeType" class="text-[10px] font-semibold px-2 py-0.5 rounded bg-slate-200 text-slate-700">Tipo</span>
+                    <span id="compFciName" class="text-xs text-slate-500">Vehículo: Fondo X</span>
+                  </div>
+                </div>
+              </div>
+              <span class="text-[11px] font-semibold text-rose-600 bg-rose-50 border border-rose-200 px-2.5 py-1 rounded-full">
+                Alternativa de Mercado
+              </span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500 font-medium">Comisión de Gestión:</span>
+                <span id="compFeeDisplay" class="font-bold text-rose-600 text-right">0,95% anual</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500 font-medium">Oferta Especial Publicada:</span>
+                <span id="compPromoDisplay" class="font-semibold text-blue-700 text-right max-w-[260px]">--</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500 font-medium">Requisitos & Reciprocidad:</span>
+                <span id="compReqDisplay" class="font-semibold text-slate-800 text-right">Exige cuenta corriente bancaria</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500 font-medium">Sinergia con Seguros LCT 20.744:</span>
+                <span id="compInsurDisplay" class="font-medium text-slate-600 text-right">Sin integración</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500 font-medium">Tiempo de Alta ID FAL:</span>
+                <span id="compTimeDisplay" class="font-semibold text-slate-700 text-right">48 a 72 hs hábiles</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-slate-200">
+                <span class="text-slate-500 font-medium">Modelo de Atención:</span>
+                <span id="compSupportDisplay" class="font-medium text-slate-700 text-right">Call center / Sucursal</span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-slate-500 font-medium">Capilaridad Territorial:</span>
+                <span id="compReachDisplay" class="font-medium text-slate-700 text-right">Sucursales urbanas bancarias</span>
+              </div>
+            </div>
+
+            <div class="pt-2 text-[11px] text-slate-500 bg-white p-3 rounded-xl border border-slate-200">
+              <span class="font-bold text-slate-700">Puntos Débiles:</span>
+              <p id="compWeakness" class="mt-0.5 leading-relaxed text-slate-600">Costos arancelarios desde el primer día y falta de soluciones que contemplen las contingencias laborales globales de la empresa.</p>
+            </div>
+          </div>
+
+          <!-- TARJETA ACA VALORES (PROPUESTA GANADORA - 100% BRANDED) -->
+          <div class="border-2 border-[#173b94] rounded-2xl p-5 bg-gradient-to-br from-[#edf4ff] via-white to-[#edf4ff]/60 space-y-4 relative shadow-lg">
+            
+            <div class="absolute -top-3.5 right-5 bg-[#95CA3C] text-[#0e2e73] text-[11px] font-black px-3.5 py-0.5 rounded-full shadow-md flex items-center gap-1 border border-[#7aa82f]">
+              <span>★</span> OFERTA SUPERADORA RECOMENDADA
+            </div>
+
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-14 h-14 rounded-xl bg-white p-1.5 border border-[#ccdbf3] flex items-center justify-center shadow-xs">
+                  <img src="https://www.acavaloresfal.com.ar/images/aca-logo-color.png" alt="ACA Valores" class="w-full h-full object-contain">
+                </div>
+                <div>
+                  <h3 class="text-base font-extrabold text-[#0e2e73] font-heading flex items-center gap-1.5">
+                    ACA Valores
+                    <span class="text-xs bg-[#173b94]/10 text-[#173b94] px-2 py-0.2 rounded-full font-bold">ALyC 1304</span>
+                  </h3>
+                  <div class="flex items-center gap-2 mt-0.5">
+                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-[#173b94] text-white">Grupo Cooperativo ACA</span>
+                    <span class="text-xs font-semibold text-[#173b94]">FCI FAL T+0 / T+1</span>
+                  </div>
+                </div>
+              </div>
+              <span class="text-[11px] font-black text-[#0e2e73] bg-[#95CA3C] px-3 py-1 rounded-full shadow-xs">
+                0% Comisión 1er Año
+              </span>
+            </div>
+
+            <div class="space-y-2.5 text-xs">
+              <div class="flex justify-between py-2 border-b border-[#ccdbf3]">
+                <span class="text-slate-600 font-medium">Comisión de Gestión:</span>
+                <span class="font-extrabold text-[#173b94] text-right">0,00% (12 Meses 100% Bonificados) • Luego 0,75%</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[#ccdbf3]">
+                <span class="text-slate-600 font-medium">Requisitos & Reciprocidad:</span>
+                <span class="font-bold text-[#0e2e73] text-right">100% Libre • Sin ataduras a cuentas bancarias</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[#ccdbf3]">
+                <span class="text-slate-600 font-medium">Sinergia con Seguros LCT 20.744:</span>
+                <span class="font-bold text-blue-700 text-right">Póliza Vida LCT 100% Bonificada x 6 Meses (La Segunda)</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[#ccdbf3]">
+                <span class="text-slate-600 font-medium">Tiempo de Alta ID FAL:</span>
+                <span class="font-bold text-[#173b94] text-right">&lt; 24 hs hábiles (100% digital)</span>
+              </div>
+              <div class="flex justify-between py-2 border-b border-[#ccdbf3]">
+                <span class="text-slate-600 font-medium">Modelo de Atención:</span>
+                <span class="font-bold text-[#0e2e73] text-right">Oficial Corporativo Dedicado + Soporte F.931</span>
+              </div>
+              <div class="flex justify-between py-2">
+                <span class="text-slate-600 font-medium">Capilaridad Territorial:</span>
+                <span class="font-bold text-[#0e2e73] text-right">+140 Cooperativas • +600 Localidades en todo el país</span>
+              </div>
+            </div>
+
+            <div class="pt-2 text-[11px] text-emerald-950 bg-[#edf4ff]/60 p-3 rounded-xl border border-[#ccdbf3]">
+              <span class="font-extrabold text-[#0e2e73]">Ventaja Única de Mercado:</span>
+              <p class="mt-0.5 leading-relaxed font-medium">
+                No solo protege el capital inembargable de la empresa con rendimiento real, sino que disminuye el costo operativo total del área de personal mediante sinergias reales con el sistema asegurador de La Segunda y la red federal de cooperativas.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SECCIÓN DE ARGUMENTOS DETALLADOS DE SUPERIORIDAD -->
+        <div class="bg-gradient-to-r from-emerald-500/10 via-slate-50 to-blue-500/10 rounded-2xl p-6 border border-[#173b94]/30 space-y-4">
+          <div class="flex items-center gap-2">
+            <span class="text-lg">🏆</span>
+            <h3 class="text-base font-bold text-slate-900">
+              Fundamentos Estratégicos: ¿Por qué la Oferta de ACA Valores es Superior a <span id="compNameArg" class="text-[#173b94] underline">la entidad seleccionada</span>?
+            </h3>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="argumentsGrid">
+            <!-- Argumentos inyectados por JS -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 3: SIMULADOR DE AHORRO PATRONAL                     -->
+    <!-- ======================================================== -->
+    <div id="tab-simulator" class="tab-pane hidden space-y-6">
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 soft-shadow space-y-6">
+        <div>
+          <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-[11px] font-bold uppercase tracking-wider mb-1">
+            🧮 Calculadora de Impacto Financiero
+          </div>
+          <h2 class="text-2xl font-bold text-slate-900">
+            Simulador de Fondos y Ahorro Corporativo FAL
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mt-1">
+            Calcule el volumen de fondo que constituirá su empresa mensualmente (detraído del SIPA sin costo adicional) y el ahorro neto de elegir ACA Valores frente a la banca tradicional.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+          <!-- CONTROLES DEL SIMULADOR -->
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-4">
+            <h3 class="text-sm font-bold text-slate-800 border-b border-slate-200 pb-2">Parámetros de la Empresa</h3>
+
+            <div>
+              <label class="text-xs font-semibold text-slate-700">Tipo de Empresa (Alícuota Legal):</label>
+              <div class="grid grid-cols-2 gap-2 mt-1">
+                <button type="button" onclick="setCompanyType('pyme')" id="btnPyme" class="py-2 px-3 text-xs font-bold rounded-lg border-2 border-[#173b94] bg-[#edf4ff] text-[#0e2e73] transition">
+                  MiPyME (2,5%)
+                </button>
+                <button type="button" onclick="setCompanyType('gran')" id="btnGran" class="py-2 px-3 text-xs font-semibold rounded-lg border border-slate-300 bg-white text-slate-600 transition">
+                  Gran Empresa (1,0%)
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center text-xs font-semibold text-slate-700">
+                <span>Nómina de Empleados:</span>
+                <span id="lblEmployees" class="font-bold text-[#173b94]">25 personas</span>
+              </div>
+              <input type="range" id="inputEmployees" min="1" max="500" value="25" oninput="calculateSimulator()" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600 mt-2">
+              <div class="flex justify-between text-[10px] text-slate-400 mt-0.5">
+                <span>1 empleado</span>
+                <span>250</span>
+                <span>500 empleados</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center text-xs font-semibold text-slate-700">
+                <span>Salario Promedio Bruto (SIPA):</span>
+                <span id="lblSalary" class="font-bold text-[#173b94]">$ 1.200.000</span>
+              </div>
+              <input type="range" id="inputSalary" min="500000" max="4000000" step="50000" value="1200000" oninput="calculateSimulator()" class="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-600 mt-2">
+              <div class="flex justify-between text-[10px] text-slate-400 mt-0.5">
+                <span>$ 500k</span>
+                <span>$ 2.0M</span>
+                <span>$ 4.0M</span>
+              </div>
+            </div>
+
+            <div class="pt-2 text-[11px] text-slate-500 bg-white p-3 rounded-xl border border-slate-200">
+              <p>💡 <strong>Recordatorio Legal:</strong> Este aporte no incrementa el costo laboral de la nómina; se descuenta de las contribuciones patronales ya existentes al SIPA (Ley 27.802).</p>
+            </div>
+          </div>
+
+          <!-- RESULTADOS FINANCIEROS -->
+          <div class="lg:col-span-2 space-y-4">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                <div class="text-[11px] font-bold uppercase text-slate-500">Masa Salarial Bruta Total</div>
+                <div id="resMasa" class="text-xl font-extrabold text-slate-900 mt-1">$ 30.000.000</div>
+                <div class="text-[10px] text-slate-400 mt-0.5">Base mensual F.931</div>
+              </div>
+
+              <div class="bg-[#edf4ff] p-4 rounded-xl border border-[#ccdbf3]">
+                <div class="text-[11px] font-bold uppercase text-[#0e2e73]">Aporte Mensual al FAL</div>
+                <div id="resAporte" class="text-xl font-black text-[#173b94] mt-1">$ 750.000</div>
+                <div class="text-[10px] text-[#173b94] mt-0.5">Detracción automática SIPA</div>
+              </div>
+
+              <div class="bg-blue-50 p-4 rounded-xl border border-blue-200">
+                <div class="text-[11px] font-bold uppercase text-blue-800">Fondo Estimado al Año 1</div>
+                <div id="resAcumulado" class="text-xl font-extrabold text-blue-700 mt-1">$ 10.150.000</div>
+                <div class="text-[10px] text-blue-600 mt-0.5">Capital + rendimiento real</div>
+              </div>
+            </div>
+
+            <!-- CUADRO DE AHORRO DIRECTO CON ACA VALORES -->
+            <div class="bg-gradient-to-br from-emerald-600 to-teal-700 text-white rounded-2xl p-6 shadow-md space-y-4">
+              <div class="flex items-center justify-between border-b border-[#173b94]/40 pb-3">
+                <div>
+                  <h4 class="text-base font-bold">Ahorro y Eficiencia Neta al Elegir ACA Valores</h4>
+                  <p class="text-xs text-emerald-100">Comparado contra el promedio bancario tradicional (1% arancel + costos de cuenta corriente)</p>
+                </div>
+                <span class="bg-white/20 text-white text-xs font-extrabold px-3 py-1 rounded-full">
+                  BENEFICIO DIRECTO
+                </span>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm">
+                  <div class="text-xs text-emerald-100">Ahorro Comisión (12 Meses Bonificados)</div>
+                  <div id="resAhorroComision" class="text-xl font-bold text-white mt-1">$ 22.500</div>
+                  <div class="text-[10px] text-emerald-200 mt-0.5">Comisión 0% por 1 año vs 1% bancario</div>
+                </div>
+
+                <div class="bg-white/10 p-3 rounded-xl backdrop-blur-sm">
+                  <div class="text-xs text-emerald-100">Ahorro Póliza Vida LCT (100% Bonificada x 6 Meses)</div>
+                  <div id="resAhorroSeguro" class="text-xl font-bold text-white mt-1">$ 45.000</div>
+                  <div class="text-[10px] text-emerald-200 mt-0.5">Póliza semestral 100% gratis (La Segunda)</div>
+                </div>
+
+                <div class="bg-emerald-400/20 p-3 rounded-xl border border-[#ccdbf3]/40">
+                  <div class="text-xs text-emerald-200 font-bold uppercase">Ahorro Total Estimado Año 1</div>
+                  <div id="resAhorroTotal" class="text-2xl font-black text-amber-300 mt-1">$ 67.500</div>
+                  <div class="text-[10px] text-emerald-100 mt-0.5">Beneficio económico tangible</div>
+                </div>
+              </div>
+
+              <p class="text-[11px] text-emerald-100 leading-relaxed text-center sm:text-left">
+                * Además del ahorro dinerario, su empresa evita costos de mantenimiento de cuentas corrientes atadas en bancos, trámites presenciales y obtiene un oficial de cuentas para la presentación de nóminas ante ARCA.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 4: FICHAS TÉCNICAS DE LAS 28 ENTIDADES              -->
+    <!-- ======================================================== -->
+    <div id="tab-directory" class="tab-pane hidden space-y-6">
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 soft-shadow space-y-4">
+        <div>
+          <h2 class="text-xl font-bold text-slate-900">Directorio Detallado de Ofertas Relevadas (28 Participantes)</h2>
+          <p class="text-xs text-slate-500">Revise la ficha técnica de cada competidor, su vehículo de inversión, ventajas y desventajas frente a ACA Valores.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="cardsGrid">
+          <!-- Tarjetas renderizadas por JS -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 5: MARCO LEGAL Y REGLAMENTARIO                      -->
+    <!-- ======================================================== -->
+    <div id="tab-normative" class="tab-pane hidden space-y-6">
+
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 soft-shadow space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-200 pb-4">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+              <span>📜</span> Repositorio Oficial del Marco Normativo del FAL
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">
+              Acceso directo a los textos íntegros y vigentes publicados en el Boletín Oficial de la República Argentina y el Sistema InfoLEG.
+            </p>
+          </div>
+          <span class="text-xs bg-[#edf4ff] text-[#0e2e73] font-bold px-3 py-1 rounded-full border border-[#ccdbf3] self-start sm:self-auto">
+            Vigencia: 1 de Noviembre de 2026
+          </span>
+        </div>
+
+        <!-- GRID DE NORMAS CON ENLACES DIRECTOS AL TEXTO COMPLETO -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
+          
+          <!-- 1. LEY 27.802 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-3 hover:border-[#173b94] transition shadow-sm">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-[#edf4ff] text-[#0e2e73]">Ley Nacional</span>
+                <span class="text-[10px] text-slate-500">Congreso de la Nación</span>
+              </div>
+              <h3 class="font-bold text-sm text-slate-900">Ley N° 27.802</h3>
+              <div class="text-[11px] font-semibold text-[#173b94]">Modernización Laboral • Título II: Creación del FAL</div>
+              <p class="text-slate-600 leading-relaxed text-[11px] pt-1">
+                Instituye el régimen del Fondo de Asistencia Laboral como sistema de capitalización para atender contingencias de desvinculación sin alterar los derechos de la LCT N° 20.744.
+              </p>
+            </div>
+            <a href="https://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=399066" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-lg bg-[#173b94] hover:bg-[#95CA3C] hover:text-[#0e2e73] text-white font-semibold text-xs shadow-sm transition">
+              <span>📖</span> Ver Texto Completo en InfoLEG ↗
+            </a>
+          </div>
+
+          <!-- 2. DECRETO 408/2026 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-3 hover:border-[#173b94] transition shadow-sm">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-800">Decreto Reglamentario</span>
+                <span class="text-[10px] text-slate-500">Poder Ejecutivo Nacional</span>
+              </div>
+              <h3 class="font-bold text-sm text-slate-900">Decreto N° 408/2026</h3>
+              <div class="text-[11px] font-semibold text-blue-700">Reglamentación del Régimen del FAL</div>
+              <p class="text-slate-600 leading-relaxed text-[11px] pt-1">
+                Fija las alícuotas (2,5% MiPyMEs y 1% Grandes Empresas), determina la detracción de aportes patronales al SIPA, el patrimonio inembargable y la vigencia al 1/11/2026.
+              </p>
+            </div>
+            <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/314643/20240926" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs shadow-sm transition">
+              <span>🏛️</span> Ver en Boletín Oficial ↗
+            </a>
+          </div>
+
+          <!-- 3. RG ARCA 5907/2026 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-3 hover:border-[#173b94] transition shadow-sm">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-100 text-amber-800">Resolución General</span>
+                <span class="text-[10px] text-slate-500">ARCA (ex AFIP)</span>
+              </div>
+              <h3 class="font-bold text-sm text-slate-900">RG ARCA N° 5907/2026</h3>
+              <div class="text-[11px] font-semibold text-amber-700">ID FAL • Simplificación Registral & F.931</div>
+              <p class="text-slate-600 leading-relaxed text-[11px] pt-1">
+                Establece el procedimiento operativo para vincular la cuenta del empleador (ID FAL) ante la autoridad tributaria e instrumentar el descuento automático en las cargas sociales.
+              </p>
+            </div>
+            <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/400000-404999/403061/norma.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-lg bg-amber-600 hover:bg-amber-700 text-white font-semibold text-xs shadow-sm transition">
+              <span>📋</span> Ver Texto Completo en InfoLEG ↗
+            </a>
+          </div>
+
+          <!-- 4. RG CNV 1167/2026 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-3 hover:border-[#173b94] transition shadow-sm">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-100 text-purple-800">Mercado de Capitales</span>
+                <span class="text-[10px] text-slate-500">Comisión Nacional de Valores</span>
+              </div>
+              <h3 class="font-bold text-sm text-slate-900">RG CNV N° 1167/2026</h3>
+              <div class="text-[11px] font-semibold text-purple-700">FCI y Fideicomisos FAL • Tope de Comisión 1%</div>
+              <p class="text-slate-600 leading-relaxed text-[11px] pt-1">
+                Regula los vehículos autorizados de inversión colectiva, las clases de cuotapartes específicas FAL y establece el tope arancelario máximo legal del 1,00% anual de honorarios.
+              </p>
+            </div>
+            <a href="https://www.cnv.gov.ar/sitioWeb/MarcoRegulatorio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-lg bg-purple-600 hover:bg-purple-700 text-white font-semibold text-xs shadow-sm transition">
+              <span>📈</span> Ver en Portal CNV ↗
+            </a>
+          </div>
+
+          <!-- 5. RESOLUCIÓN MECON 1276/2026 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-3 hover:border-[#173b94] transition shadow-sm">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-teal-100 text-teal-800">Pautas de Inversión</span>
+                <span class="text-[10px] text-slate-500">Ministerio de Economía</span>
+              </div>
+              <h3 class="font-bold text-sm text-slate-900">Resolución MECON N° 1276/2026</h3>
+              <div class="text-[11px] font-semibold text-teal-700">Criterios de Elegibilidad de Activos Financieros</div>
+              <p class="text-slate-600 leading-relaxed text-[11px] pt-1">
+                Fija los lineamientos de liquidez, calificación crediticia y ponderación de riesgo para los instrumentos que componen las carteras del Fondo de Asistencia Laboral.
+              </p>
+            </div>
+            <a href="https://www.boletinoficial.gob.ar/seccion/primera" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-lg bg-[#00B3E4] hover:bg-teal-700 text-white font-semibold text-xs shadow-sm transition">
+              <span>🏛️</span> Consultar Resolución MECON ↗
+            </a>
+          </div>
+
+          <!-- 6. LEY DE CONTRATO DE TRABAJO 20.744 -->
+          <div class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col justify-between space-y-3 hover:border-[#173b94] transition shadow-sm">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-800">Régimen Laboral</span>
+                <span class="text-[10px] text-slate-500">Régimen General LCT</span>
+              </div>
+              <h3 class="font-bold text-sm text-slate-900">Ley N° 20.744 (LCT)</h3>
+              <div class="text-[11px] font-semibold text-slate-700">Extinción del Contrato • Seguro de Vida Obligatorio</div>
+              <p class="text-slate-600 leading-relaxed text-[11px] pt-1">
+                Marco general de preaviso, indemnización por antigüedad (art. 245) y coberturas obligatorias de vida por contrato de trabajo, cuya prima bonifica ACA Valores con La Segunda.
+              </p>
+            </div>
+            <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/25000-29999/25552/texact.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-1.5 w-full py-2 px-3 rounded-lg bg-slate-700 hover:bg-slate-800 text-white font-semibold text-xs shadow-sm transition">
+              <span>📜</span> Ver Texto Vigente en InfoLEG ↗
+            </a>
+          </div>
+
+        </div>
+
+        <!-- LLAMADO AL CRONOGRAMA & CHECKLIST COMPLETO -->
+        <div class="border-t border-slate-200 pt-6">
+          <div class="p-6 rounded-2xl bg-gradient-to-r from-[#edf4ff] via-white to-[#edf4ff]/50 border-2 border-[#173b94] shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="space-y-1 text-center sm:text-left">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider text-[#0e2e73] bg-[#edf4ff] px-2.5 py-0.5 rounded-full">
+                Sección Especializada Disponible
+              </span>
+              <h3 class="text-base font-extrabold text-slate-900">
+                Cronograma de Implementación & Checklist Obligatorio para Empleadores
+              </h3>
+              <p class="text-xs text-slate-600 max-w-2xl">
+                Consulte las fechas críticas antes del 1 de Noviembre de 2026 y conozca el beneficio exclusivo de <strong>asistencia humana personalizada de ACA Valores</strong> para la obtención del ID FAL y la registración en ARCA (Simplificación Registral).
+              </p>
+            </div>
+            <button onclick="navigateTab('tab-checklist')" class="shrink-0 px-4 py-2.5 rounded-xl bg-[#173b94] hover:bg-[#95CA3C] hover:text-[#0e2e73] text-white font-bold text-xs shadow-md transition flex items-center gap-2">
+              <span>🗓️</span> Ver Cronograma & Checklist con Asistencia Humana ➔
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ========================================================== -->
+    <!-- TAB 6: CRONOGRAMA & CHECKLIST OBLIGATORIO FAL 2026         -->
+    <!-- ========================================================== -->
+    <div id="tab-checklist" class="tab-pane hidden space-y-8">
+      
+      <!-- ENCABEZADO PRINCIPAL DE LA SECCIÓN -->
+      <div class="bg-gradient-to-r from-[#0e2e73] via-[#173b94] to-[#102d76] text-white p-6 sm:p-8 rounded-2xl shadow-lg border border-slate-700/80 relative overflow-hidden">
+        <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-[#edf4ff] rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 space-y-4">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="bg-[#edf4ff]0/20 text-[#95CA3C] text-xs font-bold px-3 py-1 rounded-full border border-[#173b94]/30 flex items-center gap-1.5">
+              <span>🗓️</span> Vigencia Perentoria: 1 de Noviembre de 2026
+            </span>
+            <span class="bg-blue-500/20 text-blue-300 text-xs font-semibold px-3 py-1 rounded-full border border-blue-500/30">
+              Ley N° 27.802 • Dto. 408/2026 • RG ARCA 5907/2026
+            </span>
+            <span class="bg-amber-500/20 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full border border-amber-500/30">
+              Obligatorio para Toda Nómina
+            </span>
+          </div>
+          
+          <div class="max-w-4xl">
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+              Cronograma de Implementación & Checklist Obligatorio para Empleadores
+            </h2>
+            <p class="text-sm sm:text-base text-slate-300 mt-2 leading-relaxed">
+              Guía operativa integral y paso a paso para adecuar su empresa al nuevo régimen indemnizatorio del FAL. Conozca las fechas límites ante ARCA y acceda al diferencial exclusivo de <strong>ACA Valores</strong>: asistencia y acompañamiento humano directo para la obtención del ID FAL y su registración fiscal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO DESTACADO: EL DIFERENCIAL EXCLUSIVO DE ACA VALORES (ASISTENCIA HUMANA) -->
+      <div class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#edf4ff] via-white to-[#edf4ff]/50 border-2 border-[#173b94]/80 shadow-md space-y-6">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 border-b border-[#ccdbf3] pb-5">
+          <div class="flex items-center gap-4">
+            <div class="w-16 h-16 rounded-2xl bg-white p-2 border border-[#ccdbf3] flex items-center justify-center shadow-md shrink-0">
+              <img src="https://www.acavaloresfal.com.ar/images/aca-logo-color.png" alt="ACA Valores" class="w-full h-full object-contain">
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold uppercase tracking-wider text-[#0e2e73] bg-[#edf4ff] px-2 py-0.5 rounded-md">Diferencial Exclusivo</span>
+                <span class="text-xs text-slate-500 font-medium">Frente al Mercado Bancario y Fintech</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-0.5">
+                Asistencia Humana Personalizada para el ID FAL y Registro en ARCA
+              </h3>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 self-stretch sm:self-auto justify-end">
+            <span class="text-xs font-bold text-[#0e2e73] bg-white border border-[#ccdbf3] px-3 py-1.5 rounded-lg shadow-xs flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-[#edf4ff]0 animate-pulse"></span>
+              Oficial Asignado 1 a 1
+            </span>
+          </div>
+        </div>
+
+        <!-- CONTENIDO COMPARATIVO DEL DIFERENCIAL HUMANO -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+          
+          <!-- EL PROBLEMA EN EL RESTO DEL MERCADO -->
+          <div class="p-5 bg-white rounded-xl border border-red-200/80 shadow-xs space-y-3">
+            <div class="flex items-center gap-2 text-rose-700 font-bold text-sm">
+              <span class="w-6 h-6 rounded-full bg-rose-100 flex items-center justify-center text-xs">✕</span>
+              El Gran Obstáculo en Bancos y Fintechs
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              La obtención del <strong>ID FAL</strong> y su vinculación en el servicio web de ARCA (ex AFIP) <em>"Simplificación Registral"</em> es un trámite mandatorio con validaciones estrictas de Clave Fiscal, personería y apoderamiento societario.
+            </p>
+            <ul class="text-xs text-slate-600 space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-rose-500 font-bold">•</span>
+                <span><strong>Banca Tradicional:</strong> Deriva a sucursales físicas saturadas, impone la apertura de paquetes bancarios y exige mudar la nómina (Cuentas Sueldo) bajo apercibimiento de demorar la emisión del ID FAL entre 10 y 20 días hábiles.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-rose-500 font-bold">•</span>
+                <span><strong>Fintechs y Billeteras:</strong> Operan con autogestión 100% digital sin respaldo. Si el sistema de ARCA emite un error de CUIT o rechazo en la solapa de Simplificación Registral, dejan a la empresa y a sus contadores solos frente a tickets demorados o chatbots sin capacidad de resolución.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- LA SOLUCIÓN EXCLUSIVA DE ACA VALORES -->
+          <div class="p-5 bg-emerald-600/5 rounded-xl border border-[#ccdbf3] shadow-xs space-y-3">
+            <div class="flex items-center gap-2 text-[#0e2e73] font-bold text-sm">
+              <span class="w-6 h-6 rounded-full bg-[#173b94] text-white flex items-center justify-center text-xs">✓</span>
+              La Experiencia ACA Valores: Cero Fricción para RRHH y Contadores
+            </div>
+            <p class="text-xs text-slate-700 leading-relaxed font-medium">
+              ACA Valores asigna un <strong>Oficial Corporativo Humano Dedicado</strong> que coordina en forma directa con el apoderado legal, el responsable de recursos humanos o el estudio contable de la empresa:
+            </p>
+            <ul class="text-xs text-slate-700 space-y-2">
+              <li class="flex items-start gap-2">
+                <span class="text-[#173b94] font-bold">✔</span>
+                <span><strong>Emisión Express del ID FAL (&lt; 24 hs):</strong> Gestión prioritaria del código unívoco vinculado al CUIT empleador y emisión de la constancia de habilitación.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-[#173b94] font-bold">✔</span>
+                <span><strong>Acompañamiento en Vivo en ARCA:</strong> Soporte asistido (videollamada interactiva, telefónico o presencial en las más de 140 cooperativas agropecuarias asociadas en todo el país) durante el ingreso a <em>Simplificación Registral</em> hasta obtener el acuse definitivo.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-[#173b94] font-bold">✔</span>
+                <span><strong>Sin Ataduras ni Condicionamientos:</strong> 1 año completo (12 meses) de comisión 0% sin exigir el traslado de cuentas sueldo + Seguro de Vida LCT 20.744 bonificado 6 meses con La Segunda Seguros.</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- MÉTRICAS CLAVE DEL SERVICIO HUMANO -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+          <div class="p-3 bg-white rounded-xl border border-[#ccdbf3] text-center">
+            <div class="text-2xl font-black text-[#173b94]">&lt; 24 hs</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Emisión del ID FAL</div>
+            <div class="text-[10px] text-slate-500">Trámite ágil y prioritario</div>
+          </div>
+          <div class="p-3 bg-white rounded-xl border border-[#ccdbf3] text-center">
+            <div class="text-2xl font-black text-[#173b94]">1 a 1</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Atención Humana</div>
+            <div class="text-[10px] text-slate-500">Oficial corporativo directo</div>
+          </div>
+          <div class="p-3 bg-white rounded-xl border border-[#ccdbf3] text-center">
+            <div class="text-2xl font-black text-[#173b94]">$0</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Costo de Asesoramiento</div>
+            <div class="text-[10px] text-slate-500">Bonificación 100% integral</div>
+          </div>
+          <div class="p-3 bg-white rounded-xl border border-[#ccdbf3] text-center">
+            <div class="text-2xl font-black text-[#173b94]">600+</div>
+            <div class="text-[11px] font-semibold text-slate-700 mt-0.5">Localidades con Cobertura</div>
+            <div class="text-[10px] text-slate-500">Red federal de cooperativas</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CRONOGRAMA TEMPORAL: TIMELINE HASTA EL 1 DE NOVIEMBRE 2026 -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <span>📅</span> Cronograma Crítico de Plazos y Hitos Temporales
+          </h3>
+          <p class="text-xs text-slate-500 mt-1">
+            Plazos regulatorios y operativos que cada empleador debe cumplimentar para evitar contingencias fiscales ante ARCA y el Ministerio de Capital Humano.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
+          
+          <!-- HITO 1 -->
+          <div class="p-4 rounded-xl border-2 border-[#173b94] bg-[#edf4ff]/60 flex flex-col justify-between relative space-y-3">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-[#173b94] text-white">Etapa 1: Inmediata</span>
+                <span class="text-[10px] font-bold text-[#0e2e73]">Hasta 20 Octubre</span>
+              </div>
+              <h4 class="font-extrabold text-sm text-slate-900">Apertura Comitente & Asignación de Oficial</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed">
+                Apertura digital de la cuenta comitente en ACA Valores sin costo. Asignación inmediata del oficial corporativo y reserva del beneficio de administración 0% por 12 meses.
+              </p>
+            </div>
+            <div class="pt-2 border-t border-[#ccdbf3] text-[10px] font-bold text-[#0e2e73] flex items-center gap-1">
+              <span>👤</span> Oficial Humano asignado al instante
+            </div>
+          </div>
+
+          <!-- HITO 2 -->
+          <div class="p-4 rounded-xl border border-slate-300 bg-white flex flex-col justify-between relative space-y-3 hover:border-[#ccdbf3] transition">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-blue-100 text-blue-800">Etapa 2: Clave</span>
+                <span class="text-[10px] font-bold text-slate-500">21 al 31 Octubre</span>
+              </div>
+              <h4 class="font-bold text-sm text-slate-900">Emisión ID FAL & Vinculación en ARCA</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed">
+                ACA Valores emite el ID FAL alfanumérico. El oficial asiste en tiempo real al contador de la empresa para vincular el ID en <em>Simplificación Registral</em> de ARCA y emitir la constancia.
+              </p>
+            </div>
+            <div class="pt-2 border-t border-slate-100 text-[10px] font-semibold text-blue-700 flex items-center gap-1">
+              <span>💻</span> Asistencia interactiva en pantalla
+            </div>
+          </div>
+
+          <!-- HITO 3 -->
+          <div class="p-4 rounded-xl border border-slate-300 bg-white flex flex-col justify-between relative space-y-3 hover:border-[#ccdbf3] transition">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-100 text-amber-800">Etapa 3: Vigencia</span>
+                <span class="text-[10px] font-bold text-amber-800">1 de Noviembre</span>
+              </div>
+              <h4 class="font-bold text-sm text-slate-900">Inicio de Cómputo del Fondo FAL</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed">
+                Entrada en vigencia plena del régimen (Ley 27.802). Se liquida la nómina salarial devengada de noviembre computando la detracción del 2,5% (MiPyMEs) o 1,0% (Grandes Empresas).
+              </p>
+            </div>
+            <div class="pt-2 border-t border-slate-100 text-[10px] font-semibold text-amber-700 flex items-center gap-1">
+              <span>⚖️</span> Ley 27.802 y Dto. 408/2026 operativos
+            </div>
+          </div>
+
+          <!-- HITO 4 -->
+          <div class="p-4 rounded-xl border border-slate-300 bg-white flex flex-col justify-between relative space-y-3 hover:border-[#ccdbf3] transition">
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between">
+                <span class="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-purple-100 text-purple-800">Etapa 4: Cierre</span>
+                <span class="text-[10px] font-bold text-purple-800">Diciembre 2026</span>
+              </div>
+              <h4 class="font-bold text-sm text-slate-900">Presentación F.931 & Acreditación</h4>
+              <p class="text-[11px] text-slate-600 leading-relaxed">
+                Presentación de la DDJJ del devengado noviembre. El importe se detrae del SIPA y ARCA lo gira al FCI FAL de ACA Valores. El empleador visualiza sus cuotapartes y rendimientos.
+              </p>
+            </div>
+            <div class="pt-2 border-t border-slate-100 text-[10px] font-semibold text-purple-700 flex items-center gap-1">
+              <span>📈</span> Fondos acreditados y rentabilizados
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- CHECKLIST INTERACTIVO PASO A PASO PARA EMPLEADORES -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              <span>✅</span> Checklist Operativo Paso a Paso para Empleadores
+            </h3>
+            <p class="text-xs text-slate-500 mt-0.5">
+              Marque cada etapa a medida que su empresa complete el proceso. Guarde el registro de conformidad interna.
+            </p>
+          </div>
+          <!-- BARRA DE PROGRESO INTERACTIVA -->
+          <div class="flex items-center gap-3 bg-slate-50 px-3 py-2 rounded-xl border border-slate-200 min-w-[220px]">
+            <div class="flex-1">
+              <div class="flex justify-between text-[11px] font-bold text-slate-700 mb-1">
+                <span>Progreso:</span>
+                <span id="checklistPercentage" class="text-[#173b94] font-extrabold">0%</span>
+              </div>
+              <div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
+                <div id="checklistProgressBar" class="bg-[#95CA3C] h-2 rounded-full transition-all duration-300" style="width: 0%;"></div>
+              </div>
+            </div>
+            <span id="checklistCount" class="text-xs font-bold text-slate-600">0/5</span>
+          </div>
+        </div>
+
+        <div class="space-y-4" id="checklistContainer">
+          
+          <!-- ITEM 1 -->
+          <div class="p-4 rounded-xl border border-slate-200 hover:border-[#ccdbf3] transition bg-slate-50/50 flex items-start gap-4">
+            <input type="checkbox" id="chk1" onchange="updateChecklist()" class="mt-1 w-5 h-5 rounded text-[#173b94] border-slate-300 focus:ring-[#173b94] cursor-pointer">
+            <label for="chk1" class="cursor-pointer space-y-1 flex-1">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <span class="font-bold text-sm text-slate-900">Paso 1: Abrir la Cuenta Comitente FAL en ACA Valores</span>
+                <span class="text-[10px] font-extrabold text-[#173b94] bg-[#edf4ff] px-2 py-0.5 rounded">12 Meses 0% + Seguro Bonificado</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Realizar la apertura institucional 100% digital. No se exige mudar cuentas bancarias ni transferir cuentas sueldo. Queda automáticamente activa la bonificación del 100% de la administración por 1 año y la póliza semestral gratuita del Seguro de Vida Colectivo LCT 20.744 con La Segunda Seguros.
+              </p>
+              <div class="text-[11px] text-[#0e2e73] font-semibold flex items-center gap-1.5 pt-1">
+                <span>🛡️ Beneficio ACA:</span> Se le asigna de inmediato un Oficial Corporativo Humano dedicado con contacto directo por WhatsApp, llamada o email.
+              </div>
+            </label>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="p-4 rounded-xl border border-slate-200 hover:border-[#ccdbf3] transition bg-slate-50/50 flex items-start gap-4">
+            <input type="checkbox" id="chk2" onchange="updateChecklist()" class="mt-1 w-5 h-5 rounded text-[#173b94] border-slate-300 focus:ring-[#173b94] cursor-pointer">
+            <label for="chk2" class="cursor-pointer space-y-1 flex-1">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <span class="font-bold text-sm text-slate-900">Paso 2: Obtener y Validar el Identificador Oficial ID FAL</span>
+                <span class="text-[10px] font-extrabold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">Emisión Express &lt; 24 hs</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                ACA Valores emite y certifica por medio de BIND el código alfanumérico único ID FAL vinculado al CUIT de la empresa empleadora conforme a la reglamentación conjunta de la CNV y ARCA.
+              </p>
+              <div class="text-[11px] text-[#0e2e73] font-semibold flex items-center gap-1.5 pt-1">
+                <span>🛡️ Beneficio ACA:</span> El oficial corporativo remite el certificado digital con el código listo para copiar y pegar, validando que no existan discrepancias fiscales previas.
+              </div>
+            </label>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="p-4 rounded-xl border border-slate-200 hover:border-[#ccdbf3] transition bg-slate-50/50 flex items-start gap-4">
+            <input type="checkbox" id="chk3" onchange="updateChecklist()" class="mt-1 w-5 h-5 rounded text-[#173b94] border-slate-300 focus:ring-[#173b94] cursor-pointer">
+            <label for="chk3" class="cursor-pointer space-y-1 flex-1">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <span class="font-bold text-sm text-slate-900">Paso 3: Vincular el ID FAL en el Portal ARCA (Simplificación Registral)</span>
+                <span class="text-[10px] font-extrabold text-amber-700 bg-amber-100 px-2 py-0.5 rounded">Trámite Fiscal Crítico</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Ingresar al portal de ARCA con CUIT y Clave Fiscal Nivel 3. Acceder al servicio <em>"Simplificación Registral - Empleadores"</em>, dirigirse a la solapa <em>"Régimen Fondo de Asistencia Laboral - Ley 27.802"</em>, seleccionar como administradora a <strong>ACA Valores S.A.</strong>, tipear el ID FAL y descargar la constancia electrónica de registración.
+              </p>
+              <div class="text-[11px] text-[#0e2e73] font-semibold flex items-center gap-1.5 pt-1">
+                <span>🛡️ Asistencia Humana en Vivo ACA:</span> Un especialista de ACA Valores se conecta por videollamada interactiva o llamada asistida con su liquidador de sueldos o contador externo para acompañar la carga paso a paso en pantalla, resolviendo cualquier traba del portal de ARCA en el momento.
+              </div>
+            </label>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="p-4 rounded-xl border border-slate-200 hover:border-[#ccdbf3] transition bg-slate-50/50 flex items-start gap-4">
+            <input type="checkbox" id="chk4" onchange="updateChecklist()" class="mt-1 w-5 h-5 rounded text-[#173b94] border-slate-300 focus:ring-[#173b94] cursor-pointer">
+            <label for="chk4" class="cursor-pointer space-y-1 flex-1">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <span class="font-bold text-sm text-slate-900">Paso 4: Parametrizar la Liquidación de Sueldos y Libro de Sueldos Digital</span>
+                <span class="text-[10px] font-extrabold text-purple-700 bg-purple-100 px-2 py-0.5 rounded">Costo Financiero Neto: $0</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Actualizar las fórmulas y tablas del software de haberes para el devengado Noviembre 2026. La alícuota es del <strong>2,5% sobre salarios brutos para MiPyMEs</strong> y del <strong>1,0% para Grandes Empresas</strong>. Recordar que este importe se detrae íntegramente de las contribuciones patronales ya existentes con destino al SIPA, sin sobrecosto patronal.
+              </p>
+              <div class="text-[11px] text-[#0e2e73] font-semibold flex items-center gap-1.5 pt-1">
+                <span>🛡️ Beneficio ACA:</span> Proveemos a su estudio contable la guía de conceptos modelo homologados para el Libro de Sueldos Digital de ARCA.
+              </div>
+            </label>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="p-4 rounded-xl border border-slate-200 hover:border-[#ccdbf3] transition bg-slate-50/50 flex items-start gap-4">
+            <input type="checkbox" id="chk5" onchange="updateChecklist()" class="mt-1 w-5 h-5 rounded text-[#173b94] border-slate-300 focus:ring-[#173b94] cursor-pointer">
+            <label for="chk5" class="cursor-pointer space-y-1 flex-1">
+              <div class="flex items-center justify-between flex-wrap gap-2">
+                <span class="font-bold text-sm text-slate-900">Paso 5: Presentar el F.931 y Verificar la Acreditación de Cuotapartes</span>
+                <span class="text-[10px] font-extrabold text-[#173b94] bg-[#edf4ff] px-2 py-0.5 rounded">Automatización Total</span>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Al presentar la declaración jurada mensual en ARCA a principios de diciembre 2026, el sistema fiscal gira automáticamente la detracción a la cuenta de custodia del Fondo FAL en Caja de Valores.
+              </p>
+              <div class="text-[11px] text-[#0e2e73] font-semibold flex items-center gap-1.5 pt-1">
+                <span>🛡️ Beneficio ACA:</span> Monitoree en el portal corporativo el saldo acumulado en cuotapartes del FCI, la rentabilidad devengada en T+0/T+1 y reciba conciliaciones mensuales automáticas.
+              </div>
+            </label>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TABLA COMPARATIVA DE EXPERIENCIA EN EL TRÁMITE ANTE ARCA -->
+      <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+            <span>⚖️</span> Experiencia Operativa de Onboarding: ¿Cómo le responde cada Administradora?
+          </h3>
+          <p class="text-xs text-slate-500 mt-0.5">
+            Comparativa de soporte real para el departamento de Recursos Humanos y el Estudio Contable de la empresa.
+          </p>
+        </div>
+
+        <div class="overflow-x-auto border border-slate-200 rounded-xl">
+          <table class="w-full text-xs text-left border-collapse">
+            <thead>
+              <tr class="bg-slate-100 text-slate-700 font-semibold border-b border-slate-200">
+                <th class="py-3 px-4 w-44">Aspecto de Gestión</th>
+                <th class="py-3 px-3 w-56 text-slate-600">Banca Tradicional (Privada y Pública)</th>
+                <th class="py-3 px-3 w-56 text-slate-600">Fintechs & Billeteras Virtuales</th>
+                <th class="py-3 px-4 w-72 text-[#0e2e73] font-bold bg-[#edf4ff]/80 border-l border-[#ccdbf3]">
+                  ACA Valores (Propuesta Recomendada)
+                </th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-200">
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold text-slate-800">Canal de Asistencia</td>
+                <td class="py-3 px-3 text-slate-600">Call center genérico, colas en sucursal comercial y derivaciones sucesivas.</td>
+                <td class="py-3 px-3 text-slate-600">Chatbot automatizado y tickets de mesa de ayuda con demora de 48 a 72 hs.</td>
+                <td class="py-3 px-4 bg-[#edf4ff]/40 border-l border-emerald-100 font-bold text-[#0e2e73]">
+                  Oficial Corporativo Humano Asignado 1 a 1 (WhatsApp, teléfono, Meet y presencial).
+                </td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold text-slate-800">Trámite ID FAL en ARCA</td>
+                <td class="py-3 px-3 text-slate-600">El cliente debe arreglárselas solo; el banco solo entrega un comprobante tras abrir cuenta corriente.</td>
+                <td class="py-3 px-3 text-slate-600">Guías estáticas en PDF. Si el portal de ARCA rechaza el CUIT, no hay interlocutor técnico.</td>
+                <td class="py-3 px-4 bg-[#edf4ff]/40 border-l border-emerald-100 font-bold text-[#0e2e73]">
+                  Acompañamiento interactivo en vivo con el contador o RRHH hasta obtener el acuse de ARCA.
+                </td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold text-slate-800">Tiempo de Emisión ID</td>
+                <td class="py-3 px-3 text-slate-600">5 a 15 días hábiles sujeto a aprobación crediticia y apertura de paquetes.</td>
+                <td class="py-3 px-3 text-slate-600">24 a 48 hs si no se requiere validación de poderes o estatutos complejos.</td>
+                <td class="py-3 px-4 bg-[#edf4ff]/40 border-l border-emerald-100 font-bold text-[#0e2e73]">
+                  Inmediato (&lt; 24 hs hábiles) con validación previa de poderes societarios.
+                </td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold text-slate-800">Ataduras Comerciales</td>
+                <td class="py-3 px-3 text-slate-600 text-rose-700 font-medium">Exigen mudar la Cuenta Sueldo de los empleados para no cobrar comisiones plenas.</td>
+                <td class="py-3 px-3 text-slate-600">Comisiones desde 0,80% al 0,95% desde el día 1; sin paquete de seguros.</td>
+                <td class="py-3 px-4 bg-[#edf4ff]/40 border-l border-emerald-100 font-bold text-[#0e2e73]">
+                  100% Libre: 12 meses 0% sin pedir cuentas sueldo + Seguro de Vida LCT 20.744 bonificado 6 meses con La Segunda.
+                </td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="py-3 px-4 font-bold text-slate-800">Cercanía y Federalismo</td>
+                <td class="py-3 px-3 text-slate-600">Concentrado en grandes centros urbanos y capitales de provincia.</td>
+                <td class="py-3 px-3 text-slate-600">100% digital; sin presencia física en el interior productivo.</td>
+                <td class="py-3 px-4 bg-[#edf4ff]/40 border-l border-emerald-100 font-bold text-[#0e2e73]">
+                  Más de 140 Cooperativas Agropecuarias asociadas en 600+ localidades de todo el país.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- BANNER DE ACCIÓN INMEDIATA -->
+      <div class="bg-gradient-to-r from-[#0e2e73] to-[#173b94] rounded-2xl p-6 sm:p-8 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center md:text-left">
+          <span class="bg-[#edf4ff]0/30 text-emerald-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+            Anticípese a la fecha límite del 1 de Noviembre
+          </span>
+          <h3 class="text-xl sm:text-2xl font-black">
+            Solicite su ID FAL con Asistencia Humana Dedicada
+          </h3>
+          <p class="text-sm text-emerald-100 max-w-xl">
+            Deje en manos de especialistas la gestión del ID FAL y la vinculación en ARCA. Disfrute de 12 meses de administración al 0% y 6 meses de seguro de vida colectivo bonificado.
+          </p>
+        </div>
+        <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+          <button onclick="navigateTab('tab-simulator')" class="px-5 py-3 rounded-xl bg-white hover:bg-slate-100 text-[#0e2e73] font-bold text-sm shadow-md transition">
+            🧮 Simular Ahorro Nómina
+          </button>
+          <button onclick="navigateTab('tab-comparator')" class="px-5 py-3 rounded-xl bg-emerald-900/60 hover:bg-emerald-900/80 text-white border border-[#173b94]/50 font-bold text-sm shadow-md transition">
+            ⚡ Comparar vs. Competencia
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- PIE DE PÁGINA                                             -->
+  <!-- ========================================================== -->
+    <!-- ========================================================== -->
+  <!-- PIE DE PÁGINA INSTITUCIONAL 100% BRANDED ACA VALORES       -->
+  <!-- ========================================================== -->
+  <footer class="bg-[#0e2e73] text-white pt-10 pb-8 border-t border-[#123577] mt-auto no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      
+      <!-- FILA SUPERIOR: LOGOS DEL GRUPO COOPERATIVO -->
+      <div class="border-b border-[#1c4391] pb-6">
+        <div class="text-center text-xs font-bold uppercase tracking-widest text-[#95CA3C] mb-4">
+          Respaldo del Grupo Cooperativo y Red de Alianzas Estratégicas
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-8 sm:gap-12">
+          <a href="https://www.acacoop.com.ar/" target="_blank" rel="noopener noreferrer" class="opacity-90 hover:opacity-100 transition" title="Asociación de Cooperativas Argentinas (ACA)">
+            <img src="https://www.acavalores.com.ar/assets/logos/ACA-Logo.webp" alt="ACA 100 Años" class="h-10 sm:h-12 w-auto object-contain brightness-0 invert">
+          </a>
+          <a href="https://www.lasegunda.com.ar" target="_blank" rel="noopener noreferrer" class="opacity-90 hover:opacity-100 transition" title="La Segunda Seguros">
+            <img src="https://www.acavaloresfal.com.ar/images/la-segunda-logo.svg" alt="La Segunda Seguros" class="h-8 sm:h-10 w-auto object-contain brightness-0 invert">
+          </a>
+          <a href="https://www.avalian.com/" target="_blank" rel="noopener noreferrer" class="opacity-90 hover:opacity-100 transition" title="Avalian Cobertura Médica">
+            <img src="https://www.acavalores.com.ar/assets/logos/avalian.png" alt="Avalian" class="h-7 sm:h-8 w-auto object-contain brightness-0 invert">
+          </a>
+          <a href="https://www.acavalores.com.ar/" target="_blank" rel="noopener noreferrer" class="opacity-95 hover:opacity-100 transition" title="ACA Valores S.A.">
+            <img src="https://www.acavalores.com.ar/assets/logos/logo-aca-valores.png" alt="ACA Valores" class="h-9 sm:h-11 w-auto object-contain brightness-0 invert">
+          </a>
+        </div>
+      </div>
+
+      <!-- FILA INTERMEDIA: MERCADOS Y REGULADORES -->
+      <div class="border-b border-[#1c4391] pb-6">
+        <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-10 opacity-70 hover:opacity-90 transition">
+          <img src="https://www.acavalores.com.ar/assets/logos/cnv.png" alt="Comisión Nacional de Valores" class="h-6 sm:h-7 w-auto object-contain brightness-0 invert" title="CNV - Comisión Nacional de Valores">
+          <img src="https://www.acavalores.com.ar/assets/logos/byma-white.png" alt="BYMA" class="h-6 sm:h-7 w-auto object-contain" title="Bolsas y Mercados Argentinos">
+          <img src="https://www.acavalores.com.ar/assets/logos/caja-de-valores.png" alt="Caja de Valores" class="h-6 sm:h-7 w-auto object-contain brightness-0 invert" title="Caja de Valores S.A.">
+          <img src="https://www.acavalores.com.ar/assets/logos/argentina-clearing.png" alt="Argentina Clearing" class="h-6 sm:h-7 w-auto object-contain brightness-0 invert" title="Argentina Clearing y Registro">
+          <img src="https://www.acavalores.com.ar/assets/logos/mav.webp" alt="Mercado Argentino de Valores" class="h-6 sm:h-7 w-auto object-contain brightness-0 invert" title="MAV">
+        </div>
+      </div>
+
+      <!-- FILA DE ENLACES INSTITUCIONALES -->
+      <div class="flex flex-wrap items-center justify-center gap-4 text-xs text-slate-300">
+        <a href="mailto:atencionclientes@acavalores.com.ar" class="hover:text-[#95CA3C] transition">Consultas: atencionclientes@acavalores.com.ar</a>
+        <span>•</span>
+        <a href="https://www.acavalores.com.ar/terminos-condiciones" target="_blank" class="hover:text-[#95CA3C] transition">Términos y Condiciones</a>
+        <span>•</span>
+        <a href="https://www.acavalores.com.ar/comisiones" target="_blank" class="hover:text-[#95CA3C] transition">Listado de Comisiones</a>
+        <span>•</span>
+        <a href="https://www.acavalores.com.ar/fondos-comunes" target="_blank" class="hover:text-[#95CA3C] transition">Fondos Comunes de Inversión</a>
+        <span>•</span>
+        <a href="https://www.cnv.gov.ar/SitioWeb/RegistrosPublicos/Idoneos" target="_blank" class="hover:text-[#95CA3C] transition">Registro de Idóneos CNV</a>
+        <span>•</span>
+        <a href="https://onboarding.acavalores.com.ar/account/create" target="_blank" class="text-[#95CA3C] font-bold hover:underline">Abrir Cuenta Empresa ↗</a>
+      </div>
+
+      <!-- LEGALES Y MATRÍCULA CNV -->
+      <div class="text-center space-y-2 text-[11px] text-slate-400 max-w-4xl mx-auto pt-2">
+        <p class="leading-relaxed">
+          <strong>ACA VALORES S.A.</strong> — Agente de Liquidación y Compensación Propio (ALyC) registrado bajo el N° 1304 ante la CNV. Agente de Colocación y Distribución Integral de Fondos Comunes de Inversión (ACyDI) N° 173 de la CNV.
+        </p>
+        <p class="text-slate-400">
+          Sede Central: Av. Eduardo Madero 942, Piso 4, Ciudad Autónoma de Buenos Aires, República Argentina.
+        </p>
+        <p class="text-slate-500 text-[10px]">
+          El sistema de colocación de cuotapartes por internet cumple rigurosamente con lo dispuesto por las Normas de la Comisión Nacional de Valores (CNV) y las disposiciones de la Ley N° 27.802, Dto. 408/2026 y RG ARCA 5907/2026.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================== -->
+  <!-- DATASET Y LÓGICA JAVASCRIPT EN CLIENTE                     -->
+  <!-- ========================================================== -->
+  <script>
+    // -------------------------------------------------------------
+    // DATASET COMPLETO DE LAS 28 ENTIDADES RELEVADAS
+    // -------------------------------------------------------------
+    const entitiesData = [
+      {
+            "id": "acavalores",
+            "name": "ACA Valores",
+            "type": "ALYC",
+            "typeLabel": "ALyC / Grupo Cooperativo",
+            "fee": "0,00% (12 m.) • 0,75%",
+            "feeNum": 0.0,
+            "fci": "FCI FAL T+0 / T+1",
+            "onboarding": "< 24 hs digital",
+            "requirements": "100% Libre • Sin ataduras bancarias",
+            "insurance": "Póliza Vida LCT 100% Bonif. 6 Meses (La Segunda)",
+            "reach": "+140 Cooperativas • 600+ Localidades",
+            "support": "Oficial Corporativo Asignado",
+            "promoDetail": "12 meses (1 año completo) al 0% de comisión de administración sin ataduras + Póliza de Seguro de Vida Colectivo LCT N° 20.744 100% bonificada durante 6 meses con La Segunda Seguros.",
+            "isTarget": true,
+            "summary": "Propuesta integral del sistema cooperativo (ACA, La Segunda y BIND). 1 año completo (12 meses) de administración 100% bonificada, sin exigencia de mudar cuentas sueldo y con póliza de Vida Obligatorio LCT bonificada al 100% por 6 meses.",
+            "whyBetter": [
+                  {
+                        "title": "Ahorro Directo Incondicional (12 Meses al 0%)",
+                        "desc": "ACA Valores bonifica el 100% de los honorarios de administración durante todo el primer año sin exigir a la empresa mudar el pago de nóminas ni abrir cuentas bancarias forzadas."
+                  },
+                  {
+                        "title": "Póliza Semestral de Vida LCT 100% Gratis",
+                        "desc": "Alianza exclusiva con La Segunda Seguros que bonifica al 100% durante 6 meses el Seguro de Vida Colectivo Obligatorio (LCT 20.744), generando un ahorro económico de nómina que ningún competidor iguala."
+                  },
+                  {
+                        "title": "Capilaridad Territorial Federal Única",
+                        "desc": "Respaldo presencial en más de 600 localidades del país a través de 140 cooperativas agropecuarias asociadas. Cercanía física con contadores y gerentes de empresas en todo el territorio nacional."
+                  }
+            ]
+      },
+      {
+            "id": "bbva",
+            "name": "BBVA",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Privada Internacional",
+            "fee": "0,00% (c/ Haberes '27) / 0,98%",
+            "feeNum": 0.98,
+            "fci": "FBA FAL / BBVA Ahorro",
+            "onboarding": "48-72 hs Net Cash",
+            "requirements": "Exige Cuenta Sueldo BBVA para promo",
+            "insurance": "BBVA Seguros (sin bonif. LCT)",
+            "reach": "Red bancaria nacional",
+            "support": "Oficial de sucursal / Net Cash",
+            "promoDetail": "Ofrece 0% de comisión hasta fin de 2027 y reintegro del 100% del aporte FAL por cada nueva nómina en Cuenta Sueldo traída al banco (altas hasta 31/12/2026). Si no se muda la cuenta sueldo, aplica tarifa estándar (~0,98%).",
+            "isTarget": false,
+            "summary": "BBVA publicó una oferta agresiva atada a Pago de Haberes: 0% de comisión de administración hasta fin de 2027 y reintegro del 100% del aporte FAL por cada nueva cuenta sueldo captada. Sin embargo, supedita el beneficio a mudar la nómina y no bonifica el seguro de vida LCT.",
+            "whyBetter": [
+                  {
+                        "title": "Sin Atadura de Cuenta Sueldo (Libertad Operativa)",
+                        "desc": "La promoción de BBVA (0% y reintegro) exige que la empresa obligue a sus empleados a mudar la cuenta sueldo al banco. ACA Valores otorga 12 meses 100% bonificados sin ataduras, permitiendo pagar haberes donde la empresa elija."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada (Ahorro Laboral)",
+                        "desc": "BBVA no ofrece bonificación en el Seguro de Vida Colectivo LCT N° 20.744. ACA Valores bonifica al 100% los primeros 6 meses con La Segunda Seguros, reduciendo un costo patronal fijo ineludible."
+                  },
+                  {
+                        "title": "Cero Mantenimiento de Cuentas Corrientes Forzadas",
+                        "desc": "Operar con BBVA implica abrir paquetes corporativos con costos de mantenimiento fijos de cuenta corriente. ACA Valores opera con cuenta comitente 100% bonificada sin costos de mantenimiento ni custodia."
+                  }
+            ]
+      },
+      {
+            "id": "nacion",
+            "name": "Banco Nación",
+            "type": "BANCO_PUBLICO",
+            "typeLabel": "Banca Pública Nacional",
+            "fee": "0,00% (hasta 12/27) / 0,98%",
+            "feeNum": 0.98,
+            "fci": "Pellegrini FAL FCI",
+            "onboarding: ": "Trámite mixto (Sucursal/BNA)",
+            "requirements": "Cuenta y haberes en BNA",
+            "insurance": "Nación Seguros (tarifa estándar)",
+            "reach": "Presencia en todo el país",
+            "support": "Atención en filial pública",
+            "promoDetail": "Promoción oficial: Bonificación del 100% de comisión de administración hasta el 31/12/2027, tasas preferenciales en créditos PyME y 5 puntos de rebaja en préstamos personales para empleados que cobren el sueldo en BNA.",
+            "isTarget": false,
+            "summary": "Banco Nación lanzó una fuerte bonificación del 100% de comisión hasta diciembre de 2027 para empresas vinculadas con cuenta sueldo y tasas preferenciales para empleados, pero con severas demoras burocráticas y plataformas lentas.",
+            "whyBetter": [
+                  {
+                        "title": "Agilidad 100% Digital en < 24 hs vs. Burocracia BNA",
+                        "desc": "Banco Nación requiere trámites presenciales, firmas y plataformas con recurrentes caídas. ACA Valores genera el ID FAL de forma 100% digital en menos de 24 horas hábiles."
+                  },
+                  {
+                        "title": "Gestión Financiera Activa vs. Títulos Soberanos Pasivos",
+                        "desc": "Pellegrini Fondos invierte de forma pasiva y conservadora en deuda pública. ACA Valores aplica gestión activa multi-activo (T+0 y T+1) para proteger el poder adquisitivo del fondo frente a la inflación."
+                  },
+                  {
+                        "title": "Seguro de Vida LCT Bonificado 6 Meses con La Segunda",
+                        "desc": "Nación Seguros no bonifica la póliza de vida laboral obligatoria de la empresa; ACA Valores la entrega 100% bonificada durante el primer semestre."
+                  }
+            ]
+      },
+      {
+            "id": "macro",
+            "name": "Banco Macro",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Privada Nacional",
+            "fee": "0,00% (1 año c/ Haberes) / 0,95%",
+            "feeNum": 0.95,
+            "fci": "Macro FAL / Pionero",
+            "onboarding": "Banca Internet Empresas",
+            "requirements": "Exige paquete Sueldo Macro BMA",
+            "insurance": "Macro Seguros (sin bonif. LCT)",
+            "reach": "Líder en provincias del interior",
+            "support": "Oficial corporativo Macro",
+            "promoDetail": "Comisión 0% por 1 año sujeta a la radicación de nóminas en el servicio de Pago de Haberes Macro BMA, sumando puntos Macro Premia y beneficios en tarjetas para los empleados.",
+            "isTarget": false,
+            "summary": "Banco Macro bonifica el FAL al 0% durante 1 año pero exclusivamente para empresas que acrediten sus sueldos en la entidad a través de Macro BMA. Sin la cuenta sueldo, aplica arancel pleno.",
+            "whyBetter": [
+                  {
+                        "title": "Independencia de la Nómina Salarial",
+                        "desc": "Macro exige transferir el pago de haberes de todos los empleados para bonificar el arancel. Con ACA Valores el beneficio de 12 meses al 0% es irrestricto, sin tocar la cuenta sueldo."
+                  },
+                  {
+                        "title": "Ahorro Adicional en Seguro de Vida LCT",
+                        "desc": "Macro no descuenta el costo de la póliza patronal obligatoria. ACA Valores suma 6 meses al 100% de bonificación en el Seguro de Vida Colectivo LCT con La Segunda."
+                  },
+                  {
+                        "title": "Cero Exigencia de Reciprocidad Comercial",
+                        "desc": "Evita tener que negociar paquetes de tarjetas, líneas de descubierto obligatorias o costos de mantenimiento de cuentas operativas en Banco Macro."
+                  }
+            ]
+      },
+      {
+            "id": "credicoop",
+            "name": "Banco Credicoop",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Cooperativa",
+            "fee": "0,00% (Mutuales CAM) / 0,88%",
+            "feeNum": 0.88,
+            "fci": "Fideban / 1810 FAL",
+            "onboarding": "Credicoop Móvil / Filiales",
+            "requirements": "Convenio asociativo / Haberes",
+            "insurance": "Segurcoop (sin bonif. LCT)",
+            "reach": "Red nacional de filiales",
+            "support": "Comisión de asociados / Asesor",
+            "promoDetail": "Acuerdo especial con la Confederación Argentina de Mutualidades (CAM) con bonificación total de la comisión por 1 año para entidades asociadas. Bienvenida con millas/puntos Aerolíneas Plus para nuevas cuentas sueldo.",
+            "isTarget": false,
+            "summary": "Banco Credicoop bonifica al 100% el FAL durante 1 año para entidades mutuales nucleadas en la CAM y ofrece millas Aerolíneas Plus por captación de haberes, pero no universaliza el beneficio para todas las empresas comerciales e industriales.",
+            "whyBetter: ": [
+                  {
+                        "title": "Beneficio Universal para Todo Tipo de Empresa",
+                        "desc": "La bonificación de Credicoop está circunscrita a mutuales de la CAM o convenios gremiales cerrados. ACA Valores otorga 12 meses al 0% a cualquier PyME o empresa del país."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT 100% Bonificada por 6 Meses",
+                        "desc": "Segurcoop no entrega la póliza de vida por contrato de trabajo bonificada. ACA Valores y La Segunda Seguros reducen el costo patronal real desde el primer día."
+                  },
+                  {
+                        "title": "Mayor Potencia en Mesa de Inversiones",
+                        "desc": "ACA Valores cuenta con mayor dinamismo en instrumentos de tasa y cobertura de mercado de capitales (ROFEX, BYMA, MAE) que la banca cooperativa tradicional."
+                  }
+            ]
+      },
+      {
+            "id": "icbc",
+            "name": "ICBC",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Internacional",
+            "fee": "Bonif. c/ Haberes / 0,98%",
+            "feeNum": 0.98,
+            "fci": "Alpha FAL / Renta Fija",
+            "onboarding": "ICBC Business Online",
+            "requirements": "Cuenta corriente y haberes ICBC",
+            "insurance": "Sin convenio especial",
+            "reach": "Centros urbanos / Comex",
+            "support": "Oficial corporativo",
+            "promoDetail": "Integración de pago de haberes con FAL. Préstamos personales a tasa 0% en meses iniciales para empleados y bonificación de tarjetas de crédito. Comisiones de administración del fondo bonificadas según volumen de nómina.",
+            "isTarget": false,
+            "summary": "ICBC orienta su propuesta a empresas que integren el pago de haberes en ICBC Business con beneficios crediticios a tasa 0% para empleados, pero con altos requerimientos corporativos y aranceles estándar elevados.",
+            "whyBetter": [
+                  {
+                        "title": "Acceso Directo para la PyME sin Mínimos de Nómina",
+                        "desc": "ICBC exige altos volúmenes de nómina o comercio exterior para bonificar servicios. ACA Valores atiende desde 1 empleado hasta grandes industrias con la misma excelencia."
+                  },
+                  {
+                        "title": "12 Meses al 0% Garantizados sin Atadura de Sueldos",
+                        "desc": "No es necesario trasladar las cuentas sueldo a ICBC para gozar del 100% de bonificación arancelaria durante el primer año en ACA Valores."
+                  },
+                  {
+                        "title": "Integración con Seguros Laborales de La Segunda",
+                        "desc": "ICBC carece de una solución bonificada para el Seguro de Vida Colectivo LCT 20.744 de los empleados."
+                  }
+            ]
+      },
+      {
+            "id": "galicia",
+            "name": "Galicia",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Privada Líder",
+            "fee": "0,95% anual (Bonif. Cta Cte)",
+            "feeNum": 0.95,
+            "fci": "FIMA FAL / Ahorro Plus",
+            "onboarding": "24-48 hs Office Banking",
+            "requirements": "Requiere Cuenta Galicia",
+            "insurance": "Galicia Seguros (tarifa estándar)",
+            "reach": "Red nacional de sucursales",
+            "support": "Mesa de empresas / Sucursal",
+            "promoDetail": "Integración 100% digital en Office Banking y App Galicia Empresas. Bonificación de comisiones de mantenimiento de cuenta corriente si se acredita nómina de sueldos; tasas preferenciales de préstamos personales para empleados.",
+            "isTarget": false,
+            "summary": "Banco Galicia (Fondos Fima) ofrece alta agilidad en Office Banking y bonifica comisiones de cuenta corriente corporativa si la empresa traslada los haberes, pero no bonifica la comisión de administración del FAL ni el seguro de vida obligatorio.",
+            "whyBetter": [
+                  {
+                        "title": "Ahorro Arancelario Real (0% x 12 Meses vs 0,95%)",
+                        "desc": "Galicia cobra 0,95% anual descontado de la cuotaparte desde el inicio. ACA Valores bonifica al 100% los primeros 12 meses de gestión."
+                  },
+                  {
+                        "title": "Libertad de Cuentas sin Costos Ocultos",
+                        "desc": "Galicia busca atar a la empresa a su plataforma transaccional; ACA Valores permite operar sin mover las cuentas de banco ni pagar comisiones de mantenimiento."
+                  },
+                  {
+                        "title": "Seguro de Vida Obligatorio Bonificado",
+                        "desc": "Galicia Seguros cobra la prima estándar del seguro obligatorio de nómina; ACA Valores lo bonifica por 6 meses con La Segunda Seguros."
+                  }
+            ]
+      },
+      {
+            "id": "santander",
+            "name": "Santander",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Privada Internacional",
+            "fee": "0,98% anual (sin arancel entrada/salida)",
+            "feeNum": 0.98,
+            "fci": "Santander FAL / Supergestión",
+            "onboarding": "Online Banking Empresas",
+            "requirements": "Cuenta Corriente Santander",
+            "insurance": "Santander Seguros (sin bonif. LCT)",
+            "reach": "Red bancaria nacional líder",
+            "support": "Ejecutivo rotativo / Contact center",
+            "promoDetail": "Superfondo Reserva FAL sin comisiones de suscripción ni rescate. Integración con el servicio de Pago de Haberes con beneficios en el programa SuperClub+ y mantenimiento bonificado para empleados con acreditación regular.",
+            "isTarget": false,
+            "summary": "Santander promociona su Superfondo Reserva FAL destacando que no cobra comisiones de suscripción ni rescate e integra Pago de Haberes con SuperClub+, pero mantiene una comisión de administración al tope del mercado (~0,98%).",
+            "whyBetter": [
+                  {
+                        "title": "0% Durante 1 Año vs. Arancel Máximo de Santander",
+                        "desc": "Santander aplica una comisión cercana al tope legal del 1% anual desde el primer día. ACA Valores ofrece 12 meses 100% bonificados (0%) y luego 0,75% preferencial."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada con La Segunda",
+                        "desc": "Santander no incluye bonificación de pólizas de vida por contrato de trabajo. ACA Valores entrega 6 meses al 100% bonificados con La Segunda Seguros."
+                  },
+                  {
+                        "title": "Atención Humana sin Rotación de Ejecutivos",
+                        "desc": "Santander rota constantemente sus oficiales comerciales PyME; ACA Valores asigna un ejecutivo corporativo estable y mesa de ayuda para ARCA."
+                  }
+            ]
+      },
+      {
+            "id": "ciudad",
+            "name": "Banco Ciudad",
+            "type": "BANCO_PUBLICO",
+            "typeLabel": "Banca Pública Metropolitana",
+            "fee": "0,00% (c/ Haberes AMBA) / 0,92%",
+            "feeNum": 0.92,
+            "fci": "Ciudad FAL FCI",
+            "onboarding": "CiudadNet Empresas",
+            "requirements": "Cuenta radicada en Banco Ciudad",
+            "insurance": "Ciudad Seguros",
+            "reach": "Área Metropolitana Buenos Aires (AMBA)",
+            "support": "Sucursales AMBA",
+            "promoDetail": "Bonificación de comisión de administración para empresas que abonen haberes por Banco Ciudad y operen en el ámbito de CABA o AMBA, con promociones en cuotas y tarjetas para empleados en comercios porteños.",
+            "isTarget": false,
+            "summary": "Banco Ciudad ofrece comisión cero para empresas que radiquen nóminas en CABA/AMBA y descuentos en comercios porteños para los trabajadores, pero su radio de acción está confinado a la zona metropolitana.",
+            "whyBetter": [
+                  {
+                        "title": "Alcance Federal Real en Todo el País",
+                        "desc": "Banco Ciudad no tiene presencia operativa en el interior productivo. ACA Valores cuenta con más de 600 puntos y 140 cooperativas en todas las provincias."
+                  },
+                  {
+                        "title": "Bonificación Incondicional de Nómina",
+                        "desc": "ACA Valores no condiciona su bonificación de 12 meses a que los empleados cobren en una entidad financiera específica."
+                  },
+                  {
+                        "title": "Seguro de Vida Obligatorio Bonificado 6 Meses",
+                        "desc": "Sinergia aseguradora exclusiva con La Segunda Seguros que Banco Ciudad no incluye en su propuesta."
+                  }
+            ]
+      },
+      {
+            "id": "bancor",
+            "name": "Bancor (Banco de Córdoba)",
+            "type": "BANCO_PUBLICO",
+            "typeLabel": "Banca Pública Provincial",
+            "fee": "Bonif. c/ Haberes / 0,90%",
+            "feeNum": 0.9,
+            "fci": "Champaquí FAL FCI",
+            "onboarding": "Bancor Empresas",
+            "requirements": "Cuenta abierta en Bancor",
+            "insurance": "Convenios provinciales",
+            "reach": "Líder en Provincia de Córdoba",
+            "support": "Sucursal y oficial provincial",
+            "promoDetail": "Champaquí Fondos ofrece bonificaciones en paquetes de cuenta y condiciones especiales de financiamiento para empresas cordobesas que canalicen pagos de sueldos por Bancor.",
+            "isTarget": false,
+            "summary": "Bancor apalanca su liderazgo provincial con beneficios para empresas que concentren el pago de sueldos en Córdoba, pero resulta ineficiente para empresas con empleados o sucursales fuera de la provincia.",
+            "whyBetter": [
+                  {
+                        "title": "Cobertura Nacional Multijurisdiccional",
+                        "desc": "Bancor está circunscrito a Córdoba. ACA Valores opera con red propia en Córdoba, Santa Fe, Buenos Aires, Entre Ríos, La Pampa y el resto del país."
+                  },
+                  {
+                        "title": "1 Año al 0% sin Mudar Cuentas Bancarias",
+                        "desc": "ACA Valores otorga 12 meses de administración sin costo sin obligar a la empresa a atarse a la banca pública provincial."
+                  },
+                  {
+                        "title": "Sinergia Aseguradora Laboral de La Segunda",
+                        "desc": "Descuento del 100% durante 6 meses en el seguro de vida obligatorio de la LCT, beneficio inexistente en Bancor."
+                  }
+            ]
+      },
+      {
+            "id": "allaria",
+            "name": "Allaria",
+            "type": "ALYC",
+            "typeLabel": "ALyC Institucional",
+            "fee": "0,85% - 0,95%",
+            "feeNum": 0.9,
+            "fci": "Allaria FAL FCI (T+1)",
+            "onboarding": "24-48 hs web",
+            "requirements": "Legajo ALyC corporativo",
+            "insurance": "Sin integración con seguros",
+            "reach": "Centralizado en CABA",
+            "support": "Mesa institucional",
+            "promoDetail": "No ofrece cuenta sueldo (por restricción legal de ALyC) ni promociones de bonificación arancelaria publicadas. Arancel pleno de gestión desde el primer día.",
+            "isTarget": false,
+            "summary": "ALyC líder en el segmento institucional de CABA. Al ser sociedad de bolsa, no puede ofrecer cuenta sueldo bancaria ni ofrece promociones de bonificación arancelaria en su web.",
+            "whyBetter": [
+                  {
+                        "title": "12 Meses 100% Bonificados vs. Arancel Inmediato",
+                        "desc": "Allaria cobra arancel de gestión desde el primer aporte. ACA Valores ofrece 1 año completo (12 meses) con arancel 0%, maximizando el rendimiento inicial de la reserva."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada con La Segunda",
+                        "desc": "Allaria ofrece un producto puramente bursátil. ACA Valores resuelve tanto el fondo indemnizatorio como el seguro de vida obligatorio bonificado por 6 meses con La Segunda."
+                  },
+                  {
+                        "title": "Atención Federal Descentralizada",
+                        "desc": "Allaria opera concentrada en CABA. ACA Valores ofrece acompañamiento presencial y técnico en todo el interior a través de la red cooperativa."
+                  }
+            ]
+      },
+      {
+            "id": "cocos",
+            "name": "Cocos Capital",
+            "type": "FINTECH",
+            "typeLabel": "Fintech / ALyC Digital",
+            "fee": "0,80% anual",
+            "feeNum": 0.8,
+            "fci": "Cocos Ahorro FAL (T+0)",
+            "onboarding": "Inmediato en App",
+            "requirements": "Cuenta digital en aplicación",
+            "insurance": "Inexistente",
+            "reach": "100% Virtual (Sin sucursales)",
+            "support": "Chatbot y tickets digitales",
+            "promoDetail": "Cero comisión de suscripción, pero arancel anual del 0,80% sin período bonificado. No puede brindar cuenta sueldo bancaria. Soporte automatizado en app.",
+            "isTarget": false,
+            "summary": "Fintech enfocada en trading retail y bajos costos. Sin capacidad de ofrecer cuentas sueldo bancarias, con soporte automatizado y sin bonificaciones semestrales o anuales.",
+            "whyBetter": [
+                  {
+                        "title": "Oficial Corporativo Humano vs. Chatbot",
+                        "desc": "Cocos gestiona dudas mediante tickets y respuestas automáticas. ACA Valores asigna un ejecutivo corporativo que acompaña al liquidador de sueldos en la parametrización de ARCA."
+                  },
+                  {
+                        "title": "12 Meses al 0% vs. 0,80% desde el Inicio",
+                        "desc": "ACA Valores bonifica el 100% de los gastos de administración en el primer año, superando la tarifa fija de Cocos."
+                  },
+                  {
+                        "title": "Póliza de Vida Obligatorio con La Segunda",
+                        "desc": "Cocos carece de integración aseguradora; ACA Valores bonifica al 100% la póliza semestral de Vida Colectivo LCT N° 20.744."
+                  }
+            ]
+      },
+      {
+            "id": "balanz",
+            "name": "Balanz",
+            "type": "ALYC",
+            "typeLabel": "ALyC de Mercado",
+            "fee": "0,85% anual",
+            "feeNum": 0.85,
+            "fci": "Balanz FAL FCI (T+1)",
+            "onboarding": "24 hs digital",
+            "requirements": "Apertura en plataforma web",
+            "insurance": "Sin bonificación de seguros",
+            "reach": "Oficinas en ciudades principales",
+            "support": "Asesor financiero asignado",
+            "promoDetail": "Plataforma Balanz Corporativo para empresas. Sin servicio de cuenta sueldo bancaria ni promociones arancelarias bonificadas en web. Arancel de 0,85% anual.",
+            "isTarget": false,
+            "summary": "ALyC con fuerte presencia comercial. Excelente plataforma web para tesorerías, pero sin promociones arancelarias de gratuidad ni integración con servicios de nómina asegurada.",
+            "whyBetter": [
+                  {
+                        "title": "Bonificación Anual de Comisiones (12 Meses al 0%)",
+                        "desc": "Balanz cobra 0,85% desde el día 1. ACA Valores bonifica al 100% los primeros 12 meses (1 año completo), dejando mayores fondos a favor del empleador."
+                  },
+                  {
+                        "title": "Paquete Laboral 360° con La Segunda",
+                        "desc": "Balanz es un operador financiero puro. ACA Valores se apoya en La Segunda para bonificar la póliza de seguro de vida por contrato de trabajo por 6 meses."
+                  },
+                  {
+                        "title": "Capilaridad en el Interior Productivo",
+                        "desc": "Balanz tiene sucursales selectas en capitales; ACA Valores está presente en más de 600 localidades agrícolas, industriales y comerciales."
+                  }
+            ]
+      },
+      {
+            "id": "bancodelsol",
+            "name": "Banco del Sol",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banco Digital (Sancor)",
+            "fee": "0,90% anual",
+            "feeNum": 0.9,
+            "fci": "FCI FAL Banco del Sol",
+            "onboarding": "App Banco del Sol",
+            "requirements": "Cuenta bancaria digital",
+            "insurance": "Convenio con Sancor Seguros",
+            "reach": "Digital / Red de productores",
+            "support": "Centro de ayuda digital",
+            "promoDetail": "Paquetes digitales para empresas y convenios con Sancor Seguros, pero sin campaña de comisión cero por 12 meses ni bonificación directa del seguro de vida LCT.",
+            "isTarget": false,
+            "summary": "Banco digital de Sancor Seguros. Buena agilidad en app móvil, pero con menor volumen de mercado y sin oferta de gratuidad arancelaria total en el primer año.",
+            "whyBetter": [
+                  {
+                        "title": "Especialización y Volumen en Mercado de Capitales",
+                        "desc": "ACA Valores opera volúmenes líderes en el mercado bursátil con BIND y BACS, logrando mejor gestión activa de tasas (Lecaps/CER) para no licuar el fondo."
+                  },
+                  {
+                        "title": "12 Meses al 0% de Comisión Garantizados",
+                        "desc": "Banco del Sol no cuenta con la promoción de gratuidad de administración durante los primeros 12 meses de vigencia del régimen."
+                  },
+                  {
+                        "title": "Póliza Semestral 100% Bonificada con La Segunda",
+                        "desc": "ACA Valores entrega la cobertura de Vida LCT 20.744 sin costo durante los primeros 6 meses de contrato."
+                  }
+            ]
+      },
+      {
+            "id": "provincia",
+            "name": "Banco Provincia",
+            "type": "BANCO_PUBLICO",
+            "typeLabel": "Banca Pública Provincial",
+            "fee": "0,90% - 0,95%",
+            "feeNum": 0.92,
+            "fci": "Raíces FAL FCI",
+            "onboarding": "BIP Empresas / Filial",
+            "requirements": "Cuenta BAPRO radicada",
+            "insurance": "Provincia Seguros",
+            "reach": "Líder en Prov. de Bs. As.",
+            "support": "Oficial de cuenta sucursal",
+            "promoDetail": "Integración con Cuenta DNI y BIP Empresas. Beneficios comerciales en Cuenta DNI para empleados que cobren sueldos en BAPRO y créditos productivos para PyMEs.",
+            "isTarget": false,
+            "summary": "Banco Provincia (Raíces Fondos) integra su propuesta con Cuenta DNI para empleados, pero no bonifica la comisión de administración del FAL y está atado a la jurisdicción bonaerense.",
+            "whyBetter": [
+                  {
+                        "title": "Cobertura Nacional sin Fronteras Provinciales",
+                        "desc": "BAPRO se circunscribe operativamente a la provincia de Buenos Aires. ACA Valores opera a nivel federal en todas las provincias argentinas."
+                  },
+                  {
+                        "title": "Bonificación de Comisiones por 12 Meses",
+                        "desc": "Provincia Fondos no cuenta con período de gracia bonificado a arancel cero como el que otorga ACA Valores."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada con La Segunda",
+                        "desc": "Provincia Seguros cobra su tarifa habitual; ACA Valores bonifica al 100% la póliza de vida obligatoria por 6 meses."
+                  }
+            ]
+      },
+      {
+            "id": "patagonia",
+            "name": "Banco Patagonia",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Privada (BB)",
+            "fee": "0,95% anual",
+            "feeNum": 0.95,
+            "fci": "Lombard FAL / Patagonia",
+            "onboarding": "Patagonia e-Bank Empresas",
+            "requirements": "Cuenta Patagonia activa",
+            "insurance": "Patagonia Seguros",
+            "reach": "Presencia nacional moderada",
+            "support": "Ejecutivo de empresas",
+            "promoDetail": "Convenios de pago de haberes con Patagonia Sueldo y beneficios en Patagonia Clave, pero sin bonificación en comisiones de administración de Lombard Fondos FAL.",
+            "isTarget": false,
+            "summary": "Patagonia ofrece su servicio de pago de sueldos con beneficios bancarios estándar, pero cobra la comisión plena en el fondo FAL y no ofrece sinergias de seguros laborales.",
+            "whyBetter": [
+                  {
+                        "title": "Agilidad en el Alta de ID FAL",
+                        "desc": "En Patagonia los tiempos de legajo y activación de cuentas comitentes demoran hasta 72 hs; ACA Valores lo resuelve digitalmente en el día."
+                  },
+                  {
+                        "title": "12 Meses al 0% vs Arancel Bancario Inmediato",
+                        "desc": "ACA Valores otorga gratuidad arancelaria por 1 año completo (12 meses), frente al arancel pleno que percibe Patagonia Inversora."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT 100% Bonificada por 6 Meses",
+                        "desc": "Patagonia no ofrece descuentos cruzados en las primas de Seguro de Vida Colectivo para los empleados de la nómina."
+                  }
+            ]
+      },
+      {
+            "id": "hipotecario",
+            "name": "Banco Hipotecario",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Comercial / BACS",
+            "fee": "0,90% - 0,95%",
+            "feeNum": 0.92,
+            "fci": "BACS FAL / BH Renta",
+            "onboarding": "Hipotecario Empresas",
+            "requirements": "Cuenta en Hipotecario",
+            "insurance": "BH Seguros",
+            "reach": "Red comercial urbana",
+            "support": "Oficial de negocios",
+            "promoDetail": "Paquetes de cuenta sueldo con beneficios en préstamos hipotecarios y consumo, pero sin bonificación especial en la comisión de gestión de BACS Fondos.",
+            "isTarget": false,
+            "summary": "Banco Hipotecario promueve cuentas sueldo con foco en acceso a créditos hipotecarios y personales, pero no cuenta con promociones arancelarias para el FAL ni bonificación en seguros de nómina.",
+            "whyBetter": [
+                  {
+                        "title": "Volumen y Liquidez Inmediata T+0",
+                        "desc": "ACA Valores administra fondos con alta profundidad de mercado para responder a desvinculaciones laborales imprevistas sin penalidad de rescate."
+                  },
+                  {
+                        "title": "12 Meses de Administración a Costo Cero",
+                        "desc": "Exención de gastos de administración por 12 meses en ACA Valores vs. cobro inmediato en Banco Hipotecario."
+                  },
+                  {
+                        "title": "Póliza Semestral de Vida LCT sin Costo",
+                        "desc": "Bonificación del 100% por 6 meses con La Segunda Seguros para la nómina de la empresa."
+                  }
+            ]
+      },
+      {
+            "id": "torontotrust",
+            "name": "Toronto Trust",
+            "type": "BOUTIQUE",
+            "typeLabel": "Sociedad Gerente Boutique",
+            "fee": "0,85% anual",
+            "feeNum": 0.85,
+            "fci": "Toronto Trust FAL FCI",
+            "onboarding": "Legajo fiduciario",
+            "requirements": "Mínimos de inversión altos",
+            "insurance": "Inexistente",
+            "reach": "Oficina central CABA",
+            "support": "Atención wealth management",
+            "promoDetail": "Gestora boutique sin cuenta sueldo bancaria ni promociones masivas. Enfocada exclusivamente en tesorerías corporativas de gran tamaño.",
+            "isTarget": false,
+            "summary": "Gestora boutique de alta gama sin producto de cuenta sueldo ni bonificaciones de comisiones. Exige saldos mínimos muy elevados.",
+            "whyBetter": [
+                  {
+                        "title": "Accesibilidad sin Mínimos Excluyentes",
+                        "desc": "Toronto Trust exige saldos mínimos muy elevados. ACA Valores abre cuentas para empresas de cualquier tamaño y nómina."
+                  },
+                  {
+                        "title": "Capilaridad y Presencia Territorial",
+                        "desc": "Toronto Trust opera desde una oficina exclusiva en Retiro/CABA. ACA Valores cuenta con más de 600 puntos de contacto en el interior."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada 6 Meses",
+                        "desc": "ACA Valores vincula el FAL con el seguro de vida de los trabajadores en La Segunda Seguros, servicio que una boutique financiera no provee."
+                  }
+            ]
+      },
+      {
+            "id": "compass",
+            "name": "Compass Group",
+            "type": "BOUTIQUE",
+            "typeLabel": "Gestora Institucional Global",
+            "fee": "0,80% - 0,90%",
+            "feeNum": 0.85,
+            "fci": "Compass FAL Institucional",
+            "onboarding": "Plataforma institucional",
+            "requirements": "Grandes tesorerías",
+            "insurance": "Inexistente",
+            "reach": "Regional (LatAm)",
+            "support": "Ejecutivo institucional",
+            "promoDetail": "Mandatos institucionales y grandes fondos mutuos. Sin servicio de cuentas sueldo ni bonificaciones promocionales para PyMEs.",
+            "isTarget": false,
+            "summary": "Administradora regional institucional sin servicio de cuenta sueldo bancaria, sin soporte para el Formulario 931 de ARCA y sin bonificación arancelaria inicial.",
+            "whyBetter": [
+                  {
+                        "title": "Acompañamiento en Normativa ARCA (F.931)",
+                        "desc": "Compass delega la carga operativa en el cliente. ACA Valores asesora paso a paso en la obtención y carga del ID FAL en Simplificación Registral."
+                  },
+                  {
+                        "title": "12 Meses al 0% de Comisión",
+                        "desc": "Compass no cuenta con promociones de arancel 0% para el mercado corporativo general."
+                  },
+                  {
+                        "title": "Póliza de Vida Obligatoria Bonificada con La Segunda",
+                        "desc": "Ahorro concreto en los costos laborales fijos de la empresa mediante el seguro semestral bonificado."
+                  }
+            ]
+      },
+      {
+            "id": "one618",
+            "name": "One 618 (Consultatio)",
+            "type": "ALYC",
+            "typeLabel": "ALyC Boutique / Consultatio",
+            "fee": "0,80% - 0,85%",
+            "feeNum": 0.82,
+            "fci": "Consultatio FAL / Renta Corta",
+            "onboarding": "Plataforma digital One 618",
+            "requirements": "Legajo digital corporativo",
+            "insurance": "Sin integración de seguros",
+            "reach": "CABA / Presencia digital",
+            "support": "Asesor financiero Consultatio",
+            "promoDetail": "Plataforma digital de Consultatio Asset Management. Sin cuenta sueldo bancaria ni bonificación arancelaria en web. Foco en calidad de carteras de bonos.",
+            "isTarget": false,
+            "summary": "ALyC boutique de Consultatio (Eduardo Costantini). Destacado análisis macroeconómico pero sin servicio de haberes, sin seguros de nómina y con arancel pleno desde el inicio.",
+            "whyBetter": [
+                  {
+                        "title": "Póliza de Vida Obligatorio Bonificada x 6 Meses",
+                        "desc": "Consultatio solo ofrece vehículos de mercado. ACA Valores suma la alianza con La Segunda Seguros para bonificar al 100% la póliza semestral de Vida Colectivo LCT."
+                  },
+                  {
+                        "title": "Bonificación Arancelaria 0% Anual (12 Meses)",
+                        "desc": "One 618 cobra su comisión de gestión desde el primer centavo aportado. ACA Valores lo asume gratuitamente por 12 meses completos."
+                  },
+                  {
+                        "title": "Presencia Federal en el Interior",
+                        "desc": "Frente a la centralidad porteña de Consultatio, ACA Valores brinda cercanía física en más de 600 puntos del país."
+                  }
+            ]
+      },
+      {
+            "id": "coinag",
+            "name": "Banco Coinag",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Cooperativa Regional",
+            "fee": "0,85% anual",
+            "feeNum": 0.85,
+            "fci": "Coinag FAL / Renta",
+            "onboarding": "Sucursales Litoral / Web",
+            "requirements": "Cuenta Coinag abierta",
+            "insurance": "Convenios zonales",
+            "reach": "Santa Fe / Región Litoral",
+            "support": "Oficial regional",
+            "promoDetail": "Servicio de acreditación de haberes regional en Santa Fe con atención presencial, pero sin campañas de comisión 0% en el FAL publicadas.",
+            "isTarget": false,
+            "summary": "Banco cooperativo regional en Santa Fe. Trato cercano pero menor escala bursátil y sin promociones de gratuidad arancelaria en el FAL.",
+            "whyBetter": [
+                  {
+                        "title": "Escala Nacional y Liquidez Superior",
+                        "desc": "ACA Valores opera como uno de los líderes indiscutidos del mercado bursátil argentino, ofreciendo mayor profundidad y mejores tasas para los fondos."
+                  },
+                  {
+                        "title": "12 Meses con Comisión 100% Bonificada",
+                        "desc": "Banco Coinag no ofrece la bonificación del 100% de comisiones durante el primer año de vigencia del régimen."
+                  },
+                  {
+                        "title": "Seguro de Vida LCT Bonificado con La Segunda",
+                        "desc": "ACA Valores brinda 6 meses 100% bonificados en el Seguro de Vida Colectivo Obligatorio para los empleados."
+                  }
+            ]
+      },
+      {
+            "id": "supervielle",
+            "name": "Banco Supervielle",
+            "type": "BANCO_PRIVADO",
+            "typeLabel": "Banca Privada Nacional",
+            "fee": "0,92% anual",
+            "feeNum": 0.92,
+            "fci": "Premier FAL / Supervielle",
+            "onboarding": "Supervielle Online Empresas",
+            "requirements": "Cuenta Supervielle activa",
+            "insurance": "Supervielle Seguros",
+            "reach": "Fuerte en CABA, San Luis y Cuyo",
+            "support": "Oficial pyme sucursal",
+            "promoDetail": "Supervielle Haberes ofrece bonificación en paquetes de cuenta corriente y descuentos en comercios con tarjetas Supervielle para empleados, pero no bonifica la gestión del FAL.",
+            "isTarget": false,
+            "summary": "Especialista en pago de haberes en Cuyo y CABA con beneficios en paquetes para empleados, pero cobra arancel pleno en Premier Fondos FAL y no descuenta seguros laborales.",
+            "whyBetter": [
+                  {
+                        "title": "12 Meses al 0% de Comisión de Administración",
+                        "desc": "Supervielle no bonifica comisiones del fondo. ACA Valores brinda 12 meses (1 año) de administración a arancel cero."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT 100% Bonificada con La Segunda",
+                        "desc": "Supervielle no cuenta con un esquema de reducción de costos en la prima del seguro obligatorio de nómina."
+                  },
+                  {
+                        "title": "Libertad Operativa sin Traslado de Sueldos",
+                        "desc": "No obliga a la empresa a trasladar el pago de sueldos ni contratar paquetes bancarios adicionales."
+                  }
+            ]
+      },
+      {
+            "id": "iol",
+            "name": "IOL (InvertirOnline)",
+            "type": "FINTECH",
+            "typeLabel": "Fintech / ALyC Digital",
+            "fee": "0,85% anual",
+            "feeNum": 0.85,
+            "fci": "IOL FAL Ahorro FCI",
+            "onboarding": "100% digital web",
+            "requirements": "Cuenta comitente digital IOL",
+            "insurance": "Sin seguros",
+            "reach": "100% Online",
+            "support": "Centro de ayuda web / Chat",
+            "promoDetail": "Plataforma web ágil sin costo de apertura. No ofrece servicio de cuenta sueldo bancaria ni bonificación de comisiones en el fondo FAL.",
+            "isTarget": false,
+            "summary": "Pionero del trading digital retail. Excelente para autogestión individual, pero sin licencia para operar cuentas sueldo bancarias y sin bonificación arancelaria en FAL.",
+            "whyBetter": [
+                  {
+                        "title": "Soporte Especializado para Contadores",
+                        "desc": "IOL carece de una mesa de ayuda corporativa dedicada al Formulario 931 de ARCA. ACA Valores asesora directamente a los liquidadores de sueldos."
+                  },
+                  {
+                        "title": "12 Meses con Arancel 0% de Gestión",
+                        "desc": "IOL cobra 0,85% anual desde el primer aporte; ACA Valores bonifica al 100% todo el primer año."
+                  },
+                  {
+                        "title": "Póliza de Vida Obligatorio Bonificada x 6 Meses",
+                        "desc": "IOL es un intermediario financiero puro que no puede brindar coberturas laborales bonificadas para los empleados."
+                  }
+            ]
+      },
+      {
+            "id": "bullmarket",
+            "name": "Bull Market Brokers",
+            "type": "FINTECH",
+            "typeLabel": "Fintech / ALyC Masiva",
+            "fee": "0,80% anual",
+            "feeNum": 0.8,
+            "fci": "Bull FAL Renta Corta",
+            "onboarding": "Web y App Bull Market",
+            "requirements": "Apertura digital",
+            "insurance": "Inexistente",
+            "reach": "Digital centralizado",
+            "support": "Tickets online / Sistema automatizado",
+            "promoDetail": "Tarifas competitivas pero sin servicio de cuenta sueldo bancaria. Cobro de arancel de gestión desde el primer día.",
+            "isTarget": false,
+            "summary": "ALyC de perfil masivo y retail. Sin cuenta sueldo bancaria, con frecuente saturación de soporte y sin bonificación de comisiones en el FAL.",
+            "whyBetter": [
+                  {
+                        "title": "Estabilidad y Atención Corporativa Dedicada",
+                        "desc": "Bull Market prioriza el trading retail. ACA Valores cuenta con una división corporativa especializada en tesorerías y recursos humanos."
+                  },
+                  {
+                        "title": "12 Meses al 0% de Comisión",
+                        "desc": "ACA Valores ofrece 12 meses (1 año) sin gastos de administración, generando un ahorro directo frente al arancel de Bull Market."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada con La Segunda",
+                        "desc": "ACA Valores vincula el FAL con el seguro de vida obligatorio bonificado 100% por 6 meses con La Segunda Seguros."
+                  }
+            ]
+      },
+      {
+            "id": "ppi",
+            "name": "PPI (Portfolio Personal)",
+            "type": "ALYC",
+            "typeLabel": "ALyC / Supermercado de Fondos",
+            "fee": "0,85% anual",
+            "feeNum": 0.85,
+            "fci": "PPI FAL Corporativo",
+            "onboarding": "Plataforma PPI Corporativo",
+            "requirements": "Cuenta comitente PPI",
+            "insurance": "Sin integración de seguros",
+            "reach": "Oficinas en CABA / Digital",
+            "support": "Asesor financiero asignado",
+            "promoDetail": "Supermercado de fondos para tesorerías corporativas. Sin cuenta sueldo bancaria y sin promociones de arancel 0% en FAL.",
+            "isTarget": false,
+            "summary": "Gran plataforma multimercado con múltiples fondos disponibles. No puede brindar cuenta sueldo bancaria y no bonifica comisiones de administración en FAL.",
+            "whyBetter": [
+                  {
+                        "title": "Gratuidad de Comisiones por 12 Meses (1 Año Completo)",
+                        "desc": "PPI cobra comisiones estándar desde el inicio. ACA Valores asume el costo los primeros 12 meses (1 año completo) con 0% de honorarios."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada 6 Meses",
+                        "desc": "PPI no articula reducciones en las pólizas de vida obligatorias de la nómina con compañías aseguradoras líderes."
+                  },
+                  {
+                        "title": "Capilaridad en Economías Regionales",
+                        "desc": "PPI atiende desde CABA; ACA Valores está arraigada en las zonas agropecuarias, industriales y comerciales de todo el país."
+                  }
+            ]
+      },
+      {
+            "id": "sbs",
+            "name": "SBS Fondos",
+            "type": "ALYC",
+            "typeLabel": "ALyC Institucional Tradicional",
+            "fee": "0,85% anual",
+            "feeNum": 0.85,
+            "fci": "SBS Ahorro FAL FCI",
+            "onboarding": "Legajo corporativo SBS",
+            "requirements": "Cuenta corporativa",
+            "insurance": "Inexistente",
+            "reach": "CABA institucional",
+            "support": "Oficial institucional",
+            "promoDetail": "Gestora institucional tradicional enfocada en medianas y grandes empresas. Sin servicio de haberes ni campañas bonificadas de FAL.",
+            "isTarget": false,
+            "summary": "Reconocida gestora institucional de la City porteña. Sin cuenta sueldo bancaria, sin seguros de nómina y con arancel pleno desde el inicio.",
+            "whyBetter": [
+                  {
+                        "title": "12 Meses al 0% vs. Arancel Inmediato",
+                        "desc": "SBS no bonifica honorarios de gestión. ACA Valores otorga 12 meses (1 año completo) 100% bonificados."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT 100% Bonificada x 6 Meses",
+                        "desc": "SBS solo gestiona el activo bursátil; ACA Valores resuelve de forma articulada el FAL y la póliza obligatoria de vida con La Segunda."
+                  },
+                  {
+                        "title": "Presencia Real en el Interior",
+                        "desc": "La red de cooperativas de ACA garantiza atención presencial en pueblos y ciudades donde SBS no posee representación."
+                  }
+            ]
+      },
+      {
+            "id": "adcap",
+            "name": "Adcap Grupo Financiero",
+            "type": "ALYC",
+            "typeLabel": "ALyC / Asset Management",
+            "fee": "0,85% anual",
+            "feeNum": 0.85,
+            "fci": "Adcap FAL Renta Fija",
+            "onboarding": "Web Adcap Empresas",
+            "requirements": "Cuenta Adcap activa",
+            "insurance": "Sin integración",
+            "reach": "CABA / Regional",
+            "support": "Asesor corporativo",
+            "promoDetail": "Foco en renta fija y wealth management. Sin servicio de cuenta sueldo bancaria ni bonificación arancelaria en FAL.",
+            "isTarget": false,
+            "summary": "Gestora bursátil especializada en renta fija y corporativa. Sin cuenta sueldo bancaria y sin integración con pólizas laborales obligatorias.",
+            "whyBetter": [
+                  {
+                        "title": "Ahorro Anual de Gastos (12 Meses al 0%)",
+                        "desc": "ACA Valores bonifica el 100% de la comisión durante los primeros 12 meses, otorgando un beneficio financiero neto inmediato."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada con La Segunda",
+                        "desc": "Adcap no ofrece soluciones integradas para bonificar el Seguro de Vida Colectivo Ley 20.744."
+                  },
+                  {
+                        "title": "Arraigo en la Economía Productiva Federal",
+                        "desc": "ACA Valores pertenece al sistema cooperativo de ACA, con conocimiento directo de la realidad de las PyMEs del interior."
+                  }
+            ]
+      },
+      {
+            "id": "mariva",
+            "name": "Mariva Asset Management",
+            "type": "BOUTIQUE",
+            "typeLabel": "Banca Mayorista / Boutique",
+            "fee": "0,90% anual",
+            "feeNum": 0.9,
+            "fci": "Mariva FAL FCI",
+            "onboarding": "Legajo bancario mayorista",
+            "requirements": "Clientes corporativos calificados",
+            "insurance": "Inexistente",
+            "reach": "Oficina central CABA",
+            "support": "Mesa de dinero corporativa",
+            "promoDetail": "Banca mayorista y tesorerías corporativas calificadas. Sin foco en el segmento PyME masivo ni promociones de cuenta sueldo minorista.",
+            "isTarget": false,
+            "summary": "Banco mayorista tradicional para grandes corporaciones. Altas barreras de entrada para PyMEs y sin promociones de cuenta sueldo para nóminas generales.",
+            "whyBetter": [
+                  {
+                        "title": "Apertura para Empresas de Cualquier Escala",
+                        "desc": "Mariva tiene barreras de entrada altas para PyMEs. ACA Valores ofrece una solución ágil para empresas de cualquier dotación de personal."
+                  },
+                  {
+                        "title": "Comisión 0% por 12 Meses",
+                        "desc": "Mariva aplica aranceles desde el primer aporte; ACA Valores bonifica los primeros 12 meses (1 año completo) de administración."
+                  },
+                  {
+                        "title": "Póliza de Vida LCT Bonificada con La Segunda",
+                        "desc": "ACA Valores complementa la gestión del FAL con la póliza de vida laboral obligatoria de La Segunda Seguros 100% bonificada por 6 meses."
+                  }
+            ]
+      }
+];
+
+    // -------------------------------------------------------------
+    // FUNCIONES DE CONTROL DE INTERFAZ Y NAVEGACIÓN
+    // -------------------------------------------------------------
+    function navigateTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+      document.getElementById(tabId).classList.remove('hidden');
+
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.className = "tab-btn px-3 py-1.5 rounded-full text-xs font-semibold text-[#173b94] hover:bg-[#edf4fd] transition";
+      });
+
+      const activeBtnId = tabId.replace('tab-', 'nav-');
+      const activeBtn = document.getElementById(activeBtnId);
+      if (activeBtn) {
+        activeBtn.className = "tab-btn px-3 py-1.5 rounded-full text-xs font-bold bg-[#173b94] text-white shadow-xs transition";
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // -------------------------------------------------------------
+    // RENDERIZADO DE TABLA COMPARATIVA MAESTRA
+    // -------------------------------------------------------------
+    function renderTable(data) {
+      const tbody = document.getElementById('tableBody');
+      tbody.innerHTML = '';
+
+      data.forEach(item => {
+        const tr = document.createElement('tr');
+        tr.className = item.isTarget 
+          ? "bg-[#edf4ff] font-medium hover:bg-[#e2edff] transition border-l-4 border-l-[#173b94]"
+          : "hover:bg-[#f8fafc] transition";
+
+        tr.innerHTML = `
+          <td class="py-2 px-2.5 w-[112px] min-w-[112px] align-top">
+            <div class="flex items-start gap-1.5">
+              ${item.isTarget 
+                ? '<img src="https://www.acavalores.com.ar/ACA-Valores.png" alt="ACA" class="w-6 h-6 shrink-0 mt-0.5 object-contain rounded shadow-xs">' 
+                : `<span class="w-6 h-6 shrink-0 mt-0.5 rounded-md bg-slate-200 text-slate-700 font-bold flex items-center justify-center text-[10px]">${item.name.substring(0, 2).toUpperCase()}</span>`
+              }
+              <div class="min-w-0">
+                <div class="font-bold leading-tight ${item.isTarget ? 'text-[#0e2e73] font-heading text-xs' : 'text-slate-900 text-[11px]'}">
+                  ${item.name}
+                  ${item.isTarget ? '<span class="ml-1 text-[8px] bg-[#95CA3C] text-[#0e2e73] px-1 py-0.2 rounded font-black inline-block">RECOMENDADO</span>' : ''}
+                </div>
+                <span class="text-[9px] px-1.5 py-0.5 rounded font-bold ${getTypeBadgeClass(item.type)} inline-block mt-1 leading-none">
+                  ${item.typeLabel}
+                </span>
+              </div>
+            </div>
+          </td>
+          <td class="py-2 px-2 w-[64px] min-w-[64px] align-top font-bold text-[10px] leading-tight ${item.isTarget ? 'text-[#173b94] font-black' : 'text-slate-700'}">
+            ${item.fee}
+          </td>
+          <td class="py-2 px-2 w-[77px] min-w-[77px] align-top text-slate-600 font-medium text-[10px] leading-tight">
+            ${item.fci}
+          </td>
+          <td class="py-2 px-2 w-[67px] min-w-[67px] align-top font-medium text-[10px] leading-tight ${item.isTarget ? 'text-[#173b94] font-bold' : 'text-slate-600'}">
+            ${item.onboarding}
+          </td>
+          <td class="py-2 px-3 align-top text-[11px] min-w-[380px] leading-relaxed ${item.isTarget ? 'bg-[#edf4ff] text-[#0e2e73]' : 'text-slate-800 font-medium'} border-x border-slate-200/80">
+            <span class="${item.isTarget ? 'text-[#0e2e73] font-bold' : 'text-slate-800'}">${item.promoDetail}</span>
+          </td>
+          <td class="py-2 px-2 w-[72px] min-w-[72px] align-top text-slate-600 text-[10px] leading-tight">
+            ${item.requirements}
+          </td>
+          <td class="py-2 px-2 w-[72px] min-w-[72px] align-top text-[10px] leading-tight ${item.isTarget ? 'text-[#173b94] font-bold' : 'text-slate-500'}">
+            ${item.insurance}
+          </td>
+          <td class="py-2 px-2 w-[64px] min-w-[64px] align-top text-slate-600 text-[10px] leading-tight">
+            ${item.reach}
+          </td>
+          <td class="py-2 px-2 w-[55px] align-top text-center">
+            ${item.isTarget 
+              ? '<span class="text-xs text-[#173b94] font-black block pt-1">Tu ALyC</span>'
+              : `<button onclick="selectAndCompare('${item.id}')" class="px-1.5 py-1 rounded-full bg-slate-100 hover:bg-[#173b94] hover:text-white text-slate-700 text-[10px] font-semibold transition border border-slate-300 shadow-xs block mx-auto">Cotejar</button>`
+            }
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('rowCount').innerText = `Mostrando ${data.length} de ${entitiesData.length} entidades`;
+    }
+
+    function getTypeBadgeClass(type) {
+      switch(type) {
+        case 'ALYC': return 'bg-purple-100 text-purple-800';
+        case 'BANCO_PRIVADO': return 'bg-blue-100 text-blue-800';
+        case 'BANCO_PUBLICO': return 'bg-amber-100 text-amber-800';
+        case 'FINTECH': return 'bg-teal-100 text-teal-800';
+        case 'BOUTIQUE': return 'bg-rose-100 text-rose-800';
+        default: return 'bg-slate-100 text-slate-800';
+      }
+    }
+
+    function filterTable() {
+      const search = document.getElementById('tableSearch').value.toLowerCase();
+      const type = document.getElementById('typeFilter').value;
+
+      const filtered = entitiesData.filter(item => {
+        const matchesSearch = item.name.toLowerCase().includes(search) || 
+                              item.typeLabel.toLowerCase().includes(search) || 
+                              item.fci.toLowerCase().includes(search);
+        const matchesType = (type === 'ALL') || (item.type === type);
+        return matchesSearch && matchesType;
+      });
+
+      renderTable(filtered);
+    }
+
+    function selectAndCompare(id) {
+      document.getElementById('competitorSelect').value = id;
+      renderComparison();
+      navigateTab('tab-comparator');
+    }
+
+    // -------------------------------------------------------------
+    // RENDERIZADO DEL COMPARADOR INTERACTIVO HEAD-TO-HEAD
+    // -------------------------------------------------------------
+    function populateSelector() {
+      const select = document.getElementById('competitorSelect');
+      select.innerHTML = '';
+
+      entitiesData.filter(e => !e.isTarget).forEach(comp => {
+        const opt = document.createElement('option');
+        opt.value = comp.id;
+        opt.innerText = `${comp.name} (${comp.typeLabel})`;
+        select.appendChild(opt);
+      });
+    }
+
+    function renderComparison() {
+      const select = document.getElementById('competitorSelect');
+      const selectedId = select.value;
+      const comp = entitiesData.find(e => e.id === selectedId) || entitiesData.find(e => !e.isTarget);
+
+      if (!comp) return;
+
+      // Actualizar tarjeta del competidor
+      document.getElementById('compAvatar').innerText = comp.name.substring(0, 2).toUpperCase();
+      document.getElementById('compTitle').innerText = comp.name;
+      document.getElementById('compBadgeType').innerText = comp.typeLabel;
+      document.getElementById('compFciName').innerText = `Vehículo: ${comp.fci}`;
+      document.getElementById('compFeeDisplay').innerText = comp.fee;
+      document.getElementById('compPromoDisplay').innerText = comp.promoDetail;
+      document.getElementById('compReqDisplay').innerText = comp.requirements;
+      document.getElementById('compInsurDisplay').innerText = comp.insurance;
+      document.getElementById('compTimeDisplay').innerText = comp.onboarding;
+      document.getElementById('compSupportDisplay').innerText = comp.support;
+      document.getElementById('compReachDisplay').innerText = comp.reach;
+      document.getElementById('compWeakness').innerText = `${comp.name} cobra aranceles desde el primer aporte (${comp.fee}) y no posee una estructura de reducción de costos para los seguros obligatorios de la nómina.`;
+
+      // Encabezado de la argumentación
+      document.getElementById('compNameArg').innerText = comp.name;
+
+      // Renderizar los 3 argumentos estructurados
+      const grid = document.getElementById('argumentsGrid');
+      grid.innerHTML = comp.whyBetter.map((arg, idx) => `
+        <div class="bg-white p-4 rounded-xl border border-[#173b94]/20 shadow-sm space-y-1.5">
+          <div class="flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-[#173b94] text-white font-extrabold flex items-center justify-center text-[10px]">
+              ${idx + 1}
+            </span>
+            <h4 class="text-xs font-bold text-slate-900">${arg.title}</h4>
+          </div>
+          <p class="text-xs text-slate-600 leading-relaxed pl-7">${arg.desc}</p>
+        </div>
+      `).join('');
+    }
+
+    // -------------------------------------------------------------
+    // RENDERIZADO DE FICHAS TÉCNICAS (DIRECTORIO)
+    // -------------------------------------------------------------
+    function renderCards() {
+      const grid = document.getElementById('cardsGrid');
+      grid.innerHTML = '';
+
+      entitiesData.forEach(item => {
+        const card = document.createElement('div');
+        card.className = item.isTarget 
+          ? "border-2 border-[#173b94] rounded-2xl p-5 bg-gradient-to-br from-emerald-50/70 to-white shadow-md space-y-3"
+          : "border border-slate-200 rounded-2xl p-5 bg-white shadow-sm space-y-3 hover:border-slate-300 transition";
+
+        card.innerHTML = `
+          <div class="flex items-center justify-between border-b border-slate-100 pb-2">
+            <div class="flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-lg ${item.isTarget ? 'bg-[#173b94] text-white font-black' : 'bg-slate-100 text-slate-700 font-bold'} flex items-center justify-center text-xs">
+                ${item.name.substring(0, 2).toUpperCase()}
+              </span>
+              <div>
+                <h4 class="text-sm font-bold text-slate-900">${item.name}</h4>
+                <span class="text-[10px] text-slate-500">${item.typeLabel}</span>
+              </div>
+            </div>
+            <span class="text-xs font-extrabold ${item.isTarget ? 'text-[#173b94]' : 'text-slate-800'}">
+              ${item.fee}
+            </span>
+          </div>
+
+          <p class="text-xs text-slate-600 leading-relaxed">${item.summary}</p>
+
+          <div class="space-y-1.5 text-[11px] pt-1 border-t border-slate-100 text-slate-600">
+            <div><strong>FCI Ofrecido:</strong> ${item.fci}</div>
+            <div><strong>Oferta Publicada:</strong> <span class="${item.isTarget ? 'text-[#173b94] font-bold' : 'text-blue-700 font-semibold'}">${item.promoDetail}</span></div>
+            <div><strong>Requisitos:</strong> ${item.requirements}</div>
+            <div><strong>Seguros LCT:</strong> <span class="${item.isTarget ? 'text-blue-700 font-bold' : ''}">${item.insurance}</span></div>
+          </div>
+
+          <div class="pt-2">
+            ${item.isTarget
+              ? '<span class="block text-center text-xs font-bold text-[#0e2e73] bg-[#edf4ff] py-1.5 rounded-lg">Propuesta Destacada</span>'
+              : `<button onclick="selectAndCompare('${item.id}')" class="w-full text-center text-xs font-semibold text-slate-700 bg-slate-50 hover:bg-[#173b94] hover:text-white py-1.5 rounded-lg border border-slate-200 transition">Ver Comparación Directa</button>`
+            }
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // -------------------------------------------------------------
+    // LÓGICA DEL SIMULADOR DE AHORRO CORPORATIVO
+    // -------------------------------------------------------------
+    let companyType = 'pyme'; // 'pyme' (2.5%) o 'gran' (1.0%)
+
+    function setCompanyType(type) {
+      companyType = type;
+      if (type === 'pyme') {
+        document.getElementById('btnPyme').className = "py-2 px-3 text-xs font-bold rounded-lg border-2 border-[#173b94] bg-[#edf4ff] text-[#0e2e73] transition";
+        document.getElementById('btnGran').className = "py-2 px-3 text-xs font-semibold rounded-lg border border-slate-300 bg-white text-slate-600 transition";
+      } else {
+        document.getElementById('btnGran').className = "py-2 px-3 text-xs font-bold rounded-lg border-2 border-blue-600 bg-blue-50 text-blue-800 transition";
+        document.getElementById('btnPyme').className = "py-2 px-3 text-xs font-semibold rounded-lg border border-slate-300 bg-white text-slate-600 transition";
+      }
+      calculateSimulator();
+    }
+
+    function formatMoney(amount) {
+      return "$ " + Math.round(amount).toLocaleString('es-AR');
+    }
+
+    function calculateSimulator() {
+      const empCount = parseInt(document.getElementById('inputEmployees').value);
+      const avgSalary = parseInt(document.getElementById('inputSalary').value);
+
+      document.getElementById('lblEmployees').innerText = `${empCount} personas`;
+      document.getElementById('lblSalary').innerText = formatMoney(avgSalary);
+
+      const masaTotal = empCount * avgSalary;
+      const rate = (companyType === 'pyme') ? 0.025 : 0.010;
+      const aporteMensual = masaTotal * rate;
+      
+      // Proyección a 12 meses con rendimiento estimado (tasa anual compuesta conservadora 35% nominal / devengamiento)
+      const acumuladoAnio1 = aporteMensual * 12 * 1.15;
+
+      // Ahorro en comisiones: ACA Valores 0% por 12 meses (1 año completo) vs 1% anual bancario promedio
+      // En 12 meses con aportes mensuales acumulativos, el saldo medio ponderado es ~6.5 aportes mensuales
+      const fondoMedioAnio = aporteMensual * 6.5;
+      const ahorroComision12Meses = fondoMedioAnio * 0.010;
+
+      // Ahorro en Seguro Vida Obligatorio LCT (La Segunda Seguros): Póliza 100% Bonificada por 6 meses (Semestral)
+      // Fórmula reglamentaria/comercial: Cantidad de Empleados x Salario Promedio x 7 x 6 / 1000 * 0,30
+      const ahorroSeguroVida = (empCount * avgSalary * 7 * 6 / 1000) * 0.30;
+
+      const ahorroTotal = ahorroComision12Meses + ahorroSeguroVida;
+
+      document.getElementById('resMasa').innerText = formatMoney(masaTotal);
+      document.getElementById('resAporte').innerText = formatMoney(aporteMensual);
+      document.getElementById('resAcumulado').innerText = formatMoney(acumuladoAnio1);
+
+      document.getElementById('resAhorroComision').innerText = formatMoney(ahorroComision12Meses);
+      document.getElementById('resAhorroSeguro').innerText = formatMoney(ahorroSeguroVida);
+      document.getElementById('resAhorroTotal').innerText = formatMoney(ahorroTotal);
+    }
+
+    // -------------------------------------------------------------
+    // CONTROL DEL CHECKLIST INTERACTIVO
+    // -------------------------------------------------------------
+    function updateChecklist() {
+      const checkboxes = document.querySelectorAll('#checklistContainer input[type="checkbox"]');
+      let checkedCount = 0;
+      checkboxes.forEach(chk => {
+        if (chk.checked) checkedCount++;
+      });
+      const total = checkboxes.length || 5;
+      const percentage = Math.round((checkedCount / total) * 100);
+      
+      const countEl = document.getElementById('checklistCount');
+      const percEl = document.getElementById('checklistPercentage');
+      const barEl = document.getElementById('checklistProgressBar');
+      
+      if (countEl) countEl.innerText = `${checkedCount}/${total}`;
+      if (percEl) percEl.innerText = `${percentage}%`;
+      if (barEl) barEl.style.width = `${percentage}%`;
+    }
+
+    // -------------------------------------------------------------
+    // INICIALIZACIÓN
+    // -------------------------------------------------------------
+    window.onload = function() {
+      renderTable(entitiesData);
+      populateSelector();
+      renderComparison();
+      renderCards();
+      calculateSimulator();
+      updateChecklist();
+    };
+  </script>
+</body>
+</html>
