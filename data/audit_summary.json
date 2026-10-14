@@ -1,6 +1,6 @@
 {
-  "last_run_iso": "2026-10-13T23:50:22.136535-03:00",
-  "last_run_formatted": "13/10/2026 23:50 ART",
+  "last_run_iso": "2026-10-14T08:09:44.205699-03:00",
+  "last_run_formatted": "14/10/2026 08:09 ART",
   "total_entities": 28,
   "online_count": 20,
   "failed_count": 8,
@@ -10,169 +10,169 @@
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "allaria": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "cocos": {
       "status": "UNREACHABLE",
       "error": "HTTPError 403",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "balanz": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "bancodelsol": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "bbva": {
       "status": "UNREACHABLE",
       "error": "HTTPError 403",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "galicia": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "nacion": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "provincia": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "credicoop": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "macro": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "patagonia": {
       "status": "UNREACHABLE",
       "error": "<urlopen error [Errno -2] Name or service not know",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "icbc": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "hipotecario": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "toronto": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "compass": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "consultatio": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "coinag": {
       "status": "UNREACHABLE",
       "error": "HTTPError 403",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "santander": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "supervielle": {
       "status": "UNREACHABLE",
       "error": "<urlopen error [Errno -2] Name or service not know",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "iol": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "bullmarket": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "ppi": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "sbs": {
       "status": "UNREACHABLE",
       "error": "HTTPError 403",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "adcap": {
       "status": "UNREACHABLE",
       "error": "<urlopen error [Errno -2] Name or service not know",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "mariva": {
       "status": "UNREACHABLE",
       "error": "<urlopen error [Errno -2] Name or service not know",
       "pending_retry": true,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "ciudad": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     },
     "bancor": {
       "status": "ONLINE",
       "http_code": 200,
       "pending_retry": false,
-      "last_checked": "2026-10-13T23:50:22.136535-03:00"
+      "last_checked": "2026-10-14T08:09:44.205699-03:00"
     }
   }
 }
