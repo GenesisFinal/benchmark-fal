@@ -1,109 +1,5 @@
 [
   {
-    "timestamp": "2026-10-13T19:28:17.470583-03:00",
-    "timestamp_formatted": "13/10/2026 19:28 ART",
-    "entity_id": "iol",
-    "entity_name": "IOL InvertirOnline",
-    "url": "https://invertironline.com/",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "2f9e21cd09b2",
-    "new_hash": "a319a364d96f"
-  },
-  {
-    "timestamp": "2026-10-13T19:28:17.470583-03:00",
-    "timestamp_formatted": "13/10/2026 19:28 ART",
-    "entity_id": "ppi",
-    "entity_name": "PPI",
-    "url": "https://www.portfoliopersonal.com/",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "a4161d1182e7",
-    "new_hash": "d709e454d889"
-  },
-  {
-    "timestamp": "2026-10-13T19:28:17.470583-03:00",
-    "timestamp_formatted": "13/10/2026 19:28 ART",
-    "entity_id": "sbs",
-    "entity_name": "SBS Fondos",
-    "url": "https://sbsfondos.com/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-10-13T19:28:17.470583-03:00",
-    "timestamp_formatted": "13/10/2026 19:28 ART",
-    "entity_id": "adcap",
-    "entity_name": "Adcap Asset Management",
-    "url": "https://adcapassetmanagement.com.ar/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-10-13T19:28:17.470583-03:00",
-    "timestamp_formatted": "13/10/2026 19:28 ART",
-    "entity_id": "mariva",
-    "entity_name": "Mariva Asset Management",
-    "url": "https://marivaassetmanagement.com.ar/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-10-13T23:50:22.136535-03:00",
-    "timestamp_formatted": "13/10/2026 23:50 ART",
-    "entity_id": "allaria",
-    "entity_name": "Allaria",
-    "url": "https://www.allariafondos.com.ar/",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "9602940ae905",
-    "new_hash": "f2dc51a58960"
-  },
-  {
-    "timestamp": "2026-10-13T23:50:22.136535-03:00",
-    "timestamp_formatted": "13/10/2026 23:50 ART",
-    "entity_id": "cocos",
-    "entity_name": "Cocos",
-    "url": "https://cocos.capital/empresas",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-10-13T23:50:22.136535-03:00",
-    "timestamp_formatted": "13/10/2026 23:50 ART",
-    "entity_id": "bbva",
-    "entity_name": "BBVA",
-    "url": "https://www.bbva.com.ar/empresas.html",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-10-13T23:50:22.136535-03:00",
-    "timestamp_formatted": "13/10/2026 23:50 ART",
-    "entity_id": "patagonia",
-    "entity_name": "Banco Patagonia",
-    "url": "https://www.lombardfondos.com.ar/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-10-13T23:50:22.136535-03:00",
-    "timestamp_formatted": "13/10/2026 23:50 ART",
-    "entity_id": "icbc",
-    "entity_name": "ICBC",
-    "url": "https://www.icbc.com.ar/empresas",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "04926ba46922",
-    "new_hash": "353e01c21215"
-  },
-  {
     "timestamp": "2026-10-13T23:50:22.136535-03:00",
     "timestamp_formatted": "13/10/2026 23:50 ART",
     "entity_id": "hipotecario",
@@ -2066,6 +1962,108 @@
   {
     "timestamp": "2026-10-17T12:12:43.827353-03:00",
     "timestamp_formatted": "17/10/2026 12:12 ART",
+    "entity_id": "mariva",
+    "entity_name": "Mariva Asset Management",
+    "url": "https://marivaassetmanagement.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "cocos",
+    "entity_name": "Cocos",
+    "url": "https://cocos.capital/empresas",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "bbva",
+    "entity_name": "BBVA",
+    "url": "https://www.bbva.com.ar/empresas.html",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "patagonia",
+    "entity_name": "Banco Patagonia",
+    "url": "https://www.lombardfondos.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "icbc",
+    "entity_name": "ICBC",
+    "url": "https://www.icbc.com.ar/empresas",
+    "event": "OFERTA_ACTUALIZADA",
+    "details": "Modificación detectada en el contenido web.",
+    "previous_hash": "bcf17f34bb49",
+    "new_hash": "a04dfd283b85"
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "hipotecario",
+    "entity_name": "Banco Hipotecario",
+    "url": "https://www.hipotecario.com.ar/empresas/",
+    "event": "OFERTA_ACTUALIZADA",
+    "details": "Modificación detectada en el contenido web.",
+    "previous_hash": "51de9bc1f4ed",
+    "new_hash": "39c7f872b1ee"
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "coinag",
+    "entity_name": "Banco Coinag",
+    "url": "https://www.bancocoinag.com/empresas",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "supervielle",
+    "entity_name": "Banco Supervielle",
+    "url": "https://www.premierfondos.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "sbs",
+    "entity_name": "SBS Fondos",
+    "url": "https://sbsfondos.com/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
+    "entity_id": "adcap",
+    "entity_name": "Adcap Asset Management",
+    "url": "https://adcapassetmanagement.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-10-17T17:22:03.964248-03:00",
+    "timestamp_formatted": "17/10/2026 17:22 ART",
     "entity_id": "mariva",
     "entity_name": "Mariva Asset Management",
     "url": "https://marivaassetmanagement.com.ar/",
