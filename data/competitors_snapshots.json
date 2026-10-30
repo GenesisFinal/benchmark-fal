@@ -2,8 +2,8 @@
   "acavalores": {
     "entity_name": "ACA Valores",
     "url": "https://www.acavaloresfal.com.ar/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "8ecbba791c0bdc97b8e2a367d2e41f2bb69043634286bbad10e296aa65bfe876",
     "status": "ONLINE",
     "pending_retry": false
@@ -11,8 +11,8 @@
   "allaria": {
     "entity_name": "Allaria",
     "url": "https://www.allariafondos.com.ar/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "a603005202c576420216a2429a2ec72319d590a97614897c038ecb0a9ea434a2",
     "status": "ONLINE",
     "pending_retry": false
@@ -20,8 +20,8 @@
   "balanz": {
     "entity_name": "Balanz",
     "url": "https://www.balanz.com/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "1eaf5c5bf861c150a667698eb695e1d0309b3604899bb28ea8aa67f26bf2af46",
     "status": "ONLINE",
     "pending_retry": false
@@ -39,8 +39,8 @@
   "galicia": {
     "entity_name": "Galicia",
     "url": "https://www.galicia.ar/empresas",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "fc225629890e374954d307e7d8ded570bf5b3ab5ac8d4c5020ee1f866a334c27",
     "status": "ONLINE",
     "pending_retry": false
@@ -48,8 +48,8 @@
   "nacion": {
     "entity_name": "Banco Nación",
     "url": "https://www.bna.com.ar/Empresas",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "18b94193f0be728fee7e333ff5c0b1526bc0e680f51aaeaf6079aaa65ff14a20",
     "status": "ONLINE",
     "pending_retry": false
@@ -57,8 +57,8 @@
   "provincia": {
     "entity_name": "Banco Provincia",
     "url": "https://www.bancoprovincia.com.ar/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "e6b5e4f94ff28988988b1e85ee9490414d2b01d3f64325e7704f2f6a22cfeba9",
     "status": "ONLINE",
     "pending_retry": false
@@ -66,8 +66,8 @@
   "credicoop": {
     "entity_name": "Banco Credicoop",
     "url": "https://www.bancocredicoop.coop/empresas",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "9477a0329ec51370bd6fe19e9dc1f94948e955257d730e4687259f3bc0682c81",
     "status": "ONLINE",
     "pending_retry": false
@@ -75,26 +75,26 @@
   "macro": {
     "entity_name": "Banco Macro",
     "url": "https://www.macro.com.ar/empresas",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
-    "hash": "0d33b281c54a64c4d3a277f5ed047f29dd50e2808da77a35c1d8095c18f1fb8f",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
+    "hash": "a721f3f6999aa184575f78c7ccc4ce18ddeb0f3905eb8b1eb7396952ddfee60e",
     "status": "ONLINE",
     "pending_retry": false
   },
   "icbc": {
     "entity_name": "ICBC",
     "url": "https://www.icbc.com.ar/empresas",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
-    "hash": "45a5242e734c6b4b0f97c345d4d1b9f86797236b76e9c04f62ef4adba7fa34c5",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
+    "hash": "116dfae17dc636ad81e055d5c6b76e41e168bd9182e94c7d8328f321d0f55223",
     "status": "ONLINE",
     "pending_retry": false
   },
   "hipotecario": {
     "entity_name": "Banco Hipotecario",
     "url": "https://www.hipotecario.com.ar/empresas/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "e7980c71d4baa8245baa153cf87e76ca6010214b8e09daa005a77634185749cf",
     "status": "ONLINE",
     "pending_retry": false
@@ -102,8 +102,8 @@
   "toronto": {
     "entity_name": "Toronto Trust",
     "url": "https://www.torontotrust.com.ar/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "51ee050fa77af049cfbcca4fb36063e55d633bfd5c5f344e2061349917ea5a56",
     "status": "ONLINE",
     "pending_retry": false
@@ -111,8 +111,8 @@
   "compass": {
     "entity_name": "Compass Group",
     "url": "https://www.cgcompass.com/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "5fe39cabad178c83f6180a8012a7f13b6440520250e4820267e11bc052a4bb2c",
     "status": "ONLINE",
     "pending_retry": false
@@ -120,8 +120,8 @@
   "consultatio": {
     "entity_name": "Consultatio / One 618",
     "url": "https://www.consultatioasset.com.ar/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "791e455569e702b4877e35dfacd6013cfac6033f75581f025a5be8e54f6b7fd0",
     "status": "ONLINE",
     "pending_retry": false
@@ -139,8 +139,8 @@
   "santander": {
     "entity_name": "Banco Santander",
     "url": "https://www.santanderassetmanagement.com.ar/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "c8766898c7d2b8e88a18edd5159eeea5bb7e188b0466c383eb73681868685384",
     "status": "ONLINE",
     "pending_retry": false
@@ -148,8 +148,8 @@
   "iol": {
     "entity_name": "IOL InvertirOnline",
     "url": "https://invertironline.com/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "dbb7208e971dc082709e8f51c14f7577fd1365ae0b194318ba13a454cd4d6361",
     "status": "ONLINE",
     "pending_retry": false
@@ -157,8 +157,8 @@
   "bullmarket": {
     "entity_name": "Bull Market Brokers",
     "url": "https://www.bullmarketbrokers.com/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "505b29f29c8800ed35429ea7f79cbb08cfab10a22d043f559774fe04efab5a74",
     "status": "ONLINE",
     "pending_retry": false
@@ -166,8 +166,8 @@
   "ppi": {
     "entity_name": "PPI",
     "url": "https://www.portfoliopersonal.com/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "e44f37edb0a763e22ca2c7de4c6bc7de9a52e98991538115bc36775e4afb9e4b",
     "status": "ONLINE",
     "pending_retry": false
@@ -185,8 +185,8 @@
   "ciudad": {
     "entity_name": "Banco Ciudad",
     "url": "https://www.bancociudad.com.ar/empresas/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "8b17d0bc59442cd14f8828d07118d1f7a887ce6cfeedfb40a2a5ef96c3231d06",
     "status": "ONLINE",
     "pending_retry": false
@@ -194,8 +194,8 @@
   "bancor": {
     "entity_name": "Bancor",
     "url": "https://www.bancor.com.ar/",
-    "last_success": "2026-10-29T19:37:01.791065-03:00",
-    "last_success_formatted": "29/10/2026 19:37 ART",
+    "last_success": "2026-10-30T00:41:02.060566-03:00",
+    "last_success_formatted": "30/10/2026 00:41 ART",
     "hash": "b48072a62bf40e1e02db1947492e7c87149f1cfdfa0b856a3ed42fb86ac7a168",
     "status": "ONLINE",
     "pending_retry": false
