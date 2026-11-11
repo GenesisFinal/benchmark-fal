@@ -1,149 +1,5 @@
 [
   {
-    "timestamp": "2026-11-06T16:02:40.257269-03:00",
-    "timestamp_formatted": "06/11/2026 16:02 ART",
-    "entity_id": "coinag",
-    "entity_name": "Banco Coinag",
-    "url": "https://www.bancocoinag.com/empresas",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T16:02:40.257269-03:00",
-    "timestamp_formatted": "06/11/2026 16:02 ART",
-    "entity_id": "iol",
-    "entity_name": "IOL InvertirOnline",
-    "url": "https://invertironline.com/",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "2f677b235e7a",
-    "new_hash": "161c0b15aef4"
-  },
-  {
-    "timestamp": "2026-11-06T16:02:40.257269-03:00",
-    "timestamp_formatted": "06/11/2026 16:02 ART",
-    "entity_id": "sbs",
-    "entity_name": "SBS Fondos",
-    "url": "https://sbsfondos.com/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T16:02:40.257269-03:00",
-    "timestamp_formatted": "06/11/2026 16:02 ART",
-    "entity_id": "adcap",
-    "entity_name": "Adcap Asset Management",
-    "url": "https://adcapassetmanagement.com.ar/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T16:02:40.257269-03:00",
-    "timestamp_formatted": "06/11/2026 16:02 ART",
-    "entity_id": "mariva",
-    "entity_name": "Mariva Asset Management",
-    "url": "https://marivaassetmanagement.com.ar/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "cocos",
-    "entity_name": "Cocos",
-    "url": "https://cocos.capital/empresas",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "bancodelsol",
-    "entity_name": "Banco del Sol",
-    "url": "https://bancodelsol.com/empresas",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "bbva",
-    "entity_name": "BBVA",
-    "url": "https://www.bbva.com.ar/empresas.html",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "macro",
-    "entity_name": "Banco Macro",
-    "url": "https://www.macro.com.ar/empresas",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "412a38956539",
-    "new_hash": "713175442f31"
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "patagonia",
-    "entity_name": "Banco Patagonia",
-    "url": "https://www.lombardfondos.com.ar/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "icbc",
-    "entity_name": "ICBC",
-    "url": "https://www.icbc.com.ar/empresas",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "7b6f0669f958",
-    "new_hash": "41d9f4f9b6e1"
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "coinag",
-    "entity_name": "Banco Coinag",
-    "url": "https://www.bancocoinag.com/empresas",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "iol",
-    "entity_name": "IOL InvertirOnline",
-    "url": "https://invertironline.com/",
-    "event": "OFERTA_ACTUALIZADA",
-    "details": "Modificación detectada en el contenido web.",
-    "previous_hash": "161c0b15aef4",
-    "new_hash": "c566780536da"
-  },
-  {
-    "timestamp": "2026-11-06T19:54:13.577478-03:00",
-    "timestamp_formatted": "06/11/2026 19:54 ART",
-    "entity_id": "sbs",
-    "entity_name": "SBS Fondos",
-    "url": "https://sbsfondos.com/",
-    "event": "SITIO_NO_DISPONIBLE",
-    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
-    "pending_retry": true
-  },
-  {
     "timestamp": "2026-11-06T19:54:13.577478-03:00",
     "timestamp_formatted": "06/11/2026 19:54 ART",
     "entity_id": "adcap",
@@ -2035,6 +1891,151 @@
   {
     "timestamp": "2026-11-11T00:52:48.992452-03:00",
     "timestamp_formatted": "11/11/2026 00:52 ART",
+    "entity_id": "mariva",
+    "entity_name": "Mariva Asset Management",
+    "url": "https://marivaassetmanagement.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "cocos",
+    "entity_name": "Cocos",
+    "url": "https://cocos.capital/empresas",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "bancodelsol",
+    "entity_name": "Banco del Sol",
+    "url": "https://bancodelsol.com/empresas",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "bbva",
+    "entity_name": "BBVA",
+    "url": "https://www.bbva.com.ar/empresas.html",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "nacion",
+    "entity_name": "Banco Nación",
+    "url": "https://www.bna.com.ar/Empresas",
+    "event": "OFERTA_ACTUALIZADA",
+    "details": "Modificación detectada en el contenido web.",
+    "previous_hash": "98a00e874728",
+    "new_hash": "c8cc7432cac1"
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "macro",
+    "entity_name": "Banco Macro",
+    "url": "https://www.macro.com.ar/empresas",
+    "event": "OFERTA_ACTUALIZADA",
+    "details": "Modificación detectada en el contenido web.",
+    "previous_hash": "86cd50ef2999",
+    "new_hash": "09c980c05d26"
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "patagonia",
+    "entity_name": "Banco Patagonia",
+    "url": "https://www.lombardfondos.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "icbc",
+    "entity_name": "ICBC",
+    "url": "https://www.icbc.com.ar/empresas",
+    "event": "OFERTA_ACTUALIZADA",
+    "details": "Modificación detectada en el contenido web.",
+    "previous_hash": "4118e563e1e4",
+    "new_hash": "eed03ca4d812"
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "compass",
+    "entity_name": "Compass Group",
+    "url": "https://www.cgcompass.com/",
+    "event": "OFERTA_ACTUALIZADA",
+    "details": "Modificación detectada en el contenido web.",
+    "previous_hash": "8e3cdce866c2",
+    "new_hash": "584433536da0"
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "consultatio",
+    "entity_name": "Consultatio / One 618",
+    "url": "https://www.consultatioasset.com.ar/",
+    "event": "OFERTA_ACTUALIZADA",
+    "details": "Modificación detectada en el contenido web.",
+    "previous_hash": "a6a73c59c20d",
+    "new_hash": "3185aa0f3a26"
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "coinag",
+    "entity_name": "Banco Coinag",
+    "url": "https://www.bancocoinag.com/empresas",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "santander",
+    "entity_name": "Banco Santander",
+    "url": "https://www.santanderassetmanagement.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "sbs",
+    "entity_name": "SBS Fondos",
+    "url": "https://sbsfondos.com/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: HTTPError 403. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
+    "entity_id": "adcap",
+    "entity_name": "Adcap Asset Management",
+    "url": "https://adcapassetmanagement.com.ar/",
+    "event": "SITIO_NO_DISPONIBLE",
+    "details": "Error de conexión: <urlopen error [Errno -2] Name or service not know. Programado para reintento en el próximo turno.",
+    "pending_retry": true
+  },
+  {
+    "timestamp": "2026-11-11T10:31:32.277750-03:00",
+    "timestamp_formatted": "11/11/2026 10:31 ART",
     "entity_id": "mariva",
     "entity_name": "Mariva Asset Management",
     "url": "https://marivaassetmanagement.com.ar/",
